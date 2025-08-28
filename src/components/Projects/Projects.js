@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import ecommerce from "../../Assets/Projects/commerce.jpeg";
 import weather from "../../Assets/Projects/Weather.png";
 import universal from "../../Assets/Projects/Universal.png";
-import chatify from "../../Assets/Projects/chatify.png";
 
 function Projects() {
   return (

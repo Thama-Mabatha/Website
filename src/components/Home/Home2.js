@@ -75,6 +75,8 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
+                  href="https://twitter.com"
+                  target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
@@ -93,7 +95,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419" // This link should be updated to your Instagram handle if you have one.
+                  href="https://www.instagram.com/soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
