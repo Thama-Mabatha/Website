@@ -28,7 +28,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Always seeking the next adventure, whether in code or in life!"{" "}
+            "Always seeking, always learning—because knowledge is endless, and there’s always more to grow from "
           </p>
           <footer className="blockquote-footer">Thama</footer>
         </blockquote>

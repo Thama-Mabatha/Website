@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/images.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,12 +19,12 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a final-year BSc Information Technology student specializing in Computer Science and Informatics with strong skills in programming, software development, and business/system analysis.
+              I am a final-year BSc Information Technology student specializing in Computer Science and Informatics with skills in programming, software development, and  an interest in business/system analysis.
               <br />
               <br />
               I am proficient in classics like
               <i>
-                <b className="purple"> JavaScript, C++, and C#. </b>
+                <b className="purple"> JavaScript, Java,C++ ....</b>
               </i>
               I have experience with the full software development lifecycle, from gathering requirements to system modeling and project planning.
               <br />
@@ -52,7 +52,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg}className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -75,8 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419" // This link should be updated to your Twitter handle if you have one.
-                  target="_blank"
+                  href="" 
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
