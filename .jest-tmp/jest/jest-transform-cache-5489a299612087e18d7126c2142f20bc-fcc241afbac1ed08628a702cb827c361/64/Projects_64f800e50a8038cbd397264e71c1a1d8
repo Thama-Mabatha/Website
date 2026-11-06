@@ -1,0 +1,127 @@
+01f67a9e4b5e1eb36f3df4c13316b135
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _PageIntro = _interopRequireDefault(require("../common/PageIntro"));
+
+var _SectionHeading = _interopRequireDefault(require("../common/SectionHeading"));
+
+var _FeaturedProject = _interopRequireDefault(require("./FeaturedProject"));
+
+var _ProjectCards = _interopRequireDefault(require("./ProjectCards"));
+
+var _projects = require("../../data/projects");
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Projects\\Projects.js";
+
+function Projects() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: "projects-page",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_PageIntro.default, {
+      eyebrow: "Projects",
+      title: "A few ideas I\u2019ve loved bringing to life.",
+      description: "From a mobile worship companion to language-aware moderation research, each project taught me something different about making software useful, clear and considerate.",
+      meta: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [_projects.featuredProjects.length + _projects.additionalProjects.length, " projects \xB7 built with curiosity and care"]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 15,
+        columnNumber: 15
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "featured-projects-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
+          eyebrow: "Featured work",
+          title: "Products with a story behind them.",
+          description: "Two current projects where the interface, the underlying system and the people using it all matter."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "featured-projects-list",
+          children: _projects.featuredProjects.map((project, index) => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_FeaturedProject.default, {
+            project: project,
+            index: index
+          }, project.slug, false, {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 15
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "additional-projects-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
+          eyebrow: "More projects",
+          title: "More ways I\u2019ve learned by building.",
+          description: "Earlier projects across frontend development, full-stack systems and applied machine learning."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "additional-projects-grid",
+          children: _projects.additionalProjects.map((project, index) => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectCards.default, {
+            project: project,
+            index: index
+          }, project.slug, false, {
+            fileName: _jsxFileName,
+            lineNumber: 42,
+            columnNumber: 15
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Projects;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3RzLmpzIl0sIm5hbWVzIjpbIlByb2plY3RzIiwiZmVhdHVyZWRQcm9qZWN0cyIsImxlbmd0aCIsImFkZGl0aW9uYWxQcm9qZWN0cyIsIm1hcCIsInByb2plY3QiLCJpbmRleCIsInNsdWciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxRQUFULEdBQW9CO0FBQ2xCLHNCQUNFO0FBQU0sSUFBQSxTQUFTLEVBQUMsZUFBaEI7QUFBQSw0QkFDRSwyQkFBQyxrQkFBRDtBQUNFLE1BQUEsT0FBTyxFQUFDLFVBRFY7QUFFRSxNQUFBLEtBQUssRUFBQywrQ0FGUjtBQUdFLE1BQUEsV0FBVyxFQUFDLHdLQUhkO0FBSUUsTUFBQSxJQUFJLGVBQUU7QUFBQSxtQkFBT0MsMkJBQWlCQyxNQUFqQixHQUEwQkMsNkJBQW1CRCxNQUFwRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFKUjtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBREYsZUFRRTtBQUFTLE1BQUEsU0FBUyxFQUFDLDJCQUFuQjtBQUFBLDZCQUNFO0FBQUssUUFBQSxTQUFTLEVBQUMsWUFBZjtBQUFBLGdDQUNFLDJCQUFDLHVCQUFEO0FBQ0UsVUFBQSxPQUFPLEVBQUMsZUFEVjtBQUVFLFVBQUEsS0FBSyxFQUFDLG9DQUZSO0FBR0UsVUFBQSxXQUFXLEVBQUM7QUFIZDtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURGLGVBTUU7QUFBSyxVQUFBLFNBQVMsRUFBQyx3QkFBZjtBQUFBLG9CQUNHRCwyQkFBaUJHLEdBQWpCLENBQXFCLENBQUNDLE9BQUQsRUFBVUMsS0FBVixrQkFDcEIsMkJBQUMsd0JBQUQ7QUFBb0MsWUFBQSxPQUFPLEVBQUVELE9BQTdDO0FBQXNELFlBQUEsS0FBSyxFQUFFQztBQUE3RCxhQUFzQkQsT0FBTyxDQUFDRSxJQUE5QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGtCQUREO0FBREg7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFORjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBUkYsZUF1QkU7QUFBUyxNQUFBLFNBQVMsRUFBQyw2QkFBbkI7QUFBQSw2QkFDRTtBQUFLLFFBQUEsU0FBUyxFQUFDLFlBQWY7QUFBQSxnQ0FDRSwyQkFBQyx1QkFBRDtBQUNFLFVBQUEsT0FBTyxFQUFDLGVBRFY7QUFFRSxVQUFBLEtBQUssRUFBQywwQ0FGUjtBQUdFLFVBQUEsV0FBVyxFQUFDO0FBSGQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFERixlQU1FO0FBQUssVUFBQSxTQUFTLEVBQUMsMEJBQWY7QUFBQSxvQkFDR0osNkJBQW1CQyxHQUFuQixDQUF1QixDQUFDQyxPQUFELEVBQVVDLEtBQVYsa0JBQ3RCLDJCQUFDLHFCQUFEO0FBQWdDLFlBQUEsT0FBTyxFQUFFRCxPQUF6QztBQUFrRCxZQUFBLEtBQUssRUFBRUM7QUFBekQsYUFBa0JELE9BQU8sQ0FBQ0UsSUFBMUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFERDtBQURIO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBTkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREY7QUFBQTtBQUFBO0FBQUE7QUFBQSxZQXZCRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQXdDRDs7ZUFFY1AsUSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBQYWdlSW50cm8gZnJvbSBcIi4uL2NvbW1vbi9QYWdlSW50cm9cIjtcbmltcG9ydCBTZWN0aW9uSGVhZGluZyBmcm9tIFwiLi4vY29tbW9uL1NlY3Rpb25IZWFkaW5nXCI7XG5pbXBvcnQgRmVhdHVyZWRQcm9qZWN0IGZyb20gXCIuL0ZlYXR1cmVkUHJvamVjdFwiO1xuaW1wb3J0IFByb2plY3RDYXJkIGZyb20gXCIuL1Byb2plY3RDYXJkc1wiO1xuaW1wb3J0IHsgYWRkaXRpb25hbFByb2plY3RzLCBmZWF0dXJlZFByb2plY3RzIH0gZnJvbSBcIi4uLy4uL2RhdGEvcHJvamVjdHNcIjtcblxuZnVuY3Rpb24gUHJvamVjdHMoKSB7XG4gIHJldHVybiAoXG4gICAgPG1haW4gY2xhc3NOYW1lPVwicHJvamVjdHMtcGFnZVwiPlxuICAgICAgPFBhZ2VJbnRyb1xuICAgICAgICBleWVicm93PVwiUHJvamVjdHNcIlxuICAgICAgICB0aXRsZT1cIkEgZmV3IGlkZWFzIEnigJl2ZSBsb3ZlZCBicmluZ2luZyB0byBsaWZlLlwiXG4gICAgICAgIGRlc2NyaXB0aW9uPVwiRnJvbSBhIG1vYmlsZSB3b3JzaGlwIGNvbXBhbmlvbiB0byBsYW5ndWFnZS1hd2FyZSBtb2RlcmF0aW9uIHJlc2VhcmNoLCBlYWNoIHByb2plY3QgdGF1Z2h0IG1lIHNvbWV0aGluZyBkaWZmZXJlbnQgYWJvdXQgbWFraW5nIHNvZnR3YXJlIHVzZWZ1bCwgY2xlYXIgYW5kIGNvbnNpZGVyYXRlLlwiXG4gICAgICAgIG1ldGE9ezxzcGFuPntmZWF0dXJlZFByb2plY3RzLmxlbmd0aCArIGFkZGl0aW9uYWxQcm9qZWN0cy5sZW5ndGh9IHByb2plY3RzIMK3IGJ1aWx0IHdpdGggY3VyaW9zaXR5IGFuZCBjYXJlPC9zcGFuPn1cbiAgICAgIC8+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImZlYXR1cmVkLXByb2plY3RzLXNlY3Rpb25cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsXCI+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICBleWVicm93PVwiRmVhdHVyZWQgd29ya1wiXG4gICAgICAgICAgICB0aXRsZT1cIlByb2R1Y3RzIHdpdGggYSBzdG9yeSBiZWhpbmQgdGhlbS5cIlxuICAgICAgICAgICAgZGVzY3JpcHRpb249XCJUd28gY3VycmVudCBwcm9qZWN0cyB3aGVyZSB0aGUgaW50ZXJmYWNlLCB0aGUgdW5kZXJseWluZyBzeXN0ZW0gYW5kIHRoZSBwZW9wbGUgdXNpbmcgaXQgYWxsIG1hdHRlci5cIlxuICAgICAgICAgIC8+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmZWF0dXJlZC1wcm9qZWN0cy1saXN0XCI+XG4gICAgICAgICAgICB7ZmVhdHVyZWRQcm9qZWN0cy5tYXAoKHByb2plY3QsIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxGZWF0dXJlZFByb2plY3Qga2V5PXtwcm9qZWN0LnNsdWd9IHByb2plY3Q9e3Byb2plY3R9IGluZGV4PXtpbmRleH0gLz5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiYWRkaXRpb25hbC1wcm9qZWN0cy1zZWN0aW9uXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbFwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgZXllYnJvdz1cIk1vcmUgcHJvamVjdHNcIlxuICAgICAgICAgICAgdGl0bGU9XCJNb3JlIHdheXMgSeKAmXZlIGxlYXJuZWQgYnkgYnVpbGRpbmcuXCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiRWFybGllciBwcm9qZWN0cyBhY3Jvc3MgZnJvbnRlbmQgZGV2ZWxvcG1lbnQsIGZ1bGwtc3RhY2sgc3lzdGVtcyBhbmQgYXBwbGllZCBtYWNoaW5lIGxlYXJuaW5nLlwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFkZGl0aW9uYWwtcHJvamVjdHMtZ3JpZFwiPlxuICAgICAgICAgICAge2FkZGl0aW9uYWxQcm9qZWN0cy5tYXAoKHByb2plY3QsIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxQcm9qZWN0Q2FyZCBrZXk9e3Byb2plY3Quc2x1Z30gcHJvamVjdD17cHJvamVjdH0gaW5kZXg9e2luZGV4fSAvPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgIDwvbWFpbj5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgUHJvamVjdHM7XG4iXX0=

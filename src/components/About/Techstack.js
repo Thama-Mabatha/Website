@@ -1,59 +1,33 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-  DiMysql,
-  DiHtml5,
-  DiCss3,
-} from "react-icons/di";
-import { SiCsharp, SiDotnet } from "react-icons/si";
+  FiLayers,
+  FiTerminal,
+  FiTool,
+} from "react-icons/fi";
+import { capabilityGroups } from "../../data/profile";
+import Reveal from "../common/Reveal";
+
+const icons = {
+  layers: FiLayers,
+  terminal: FiTerminal,
+  tool: FiTool,
+};
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDotnet />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-    </Row>
+    <div className="capability-grid">
+      {capabilityGroups.map((group, index) => {
+        const Icon = icons[group.icon];
+        return (
+          <Reveal as="article" className={`capability-card${index === 0 ? " capability-card--featured" : ""}`} delay={(index % 2) * 70} key={group.title}>
+            <div className="capability-card__top"><Icon aria-hidden="true" /><span>0{index + 1}</span></div>
+            <h3>{group.title}</h3>
+            <p>{group.description}</p>
+            <ul>{group.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul>
+          </Reveal>
+        );
+      })}
+    </div>
   );
 }
 

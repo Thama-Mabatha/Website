@@ -1,70 +1,37 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import SocialLinks from "./common/SocialLinks";
+import { profile } from "../data/profile";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const { pathname } = useLocation();
+
+  if (pathname === "/") {
+    return null;
+  }
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="site-footer">
+      <div className="page-shell site-footer__main">
+        <div className="site-footer__intro">
+          <span className="site-footer__mark">{profile.shortName}</span>
+          <div>
+            <strong>{profile.name}</strong>
+            <p>Frontend-focused software developer building thoughtful digital experiences.</p>
+          </div>
+        </div>
+        <nav className="site-footer__nav" aria-label="Footer navigation">
+          <Link to="/projects">Projects</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/resume">View CV</Link>
+        </nav>
+        <SocialLinks compact />
+      </div>
+      <div className="page-shell site-footer__base">
+        <span>© {new Date().getFullYear()} {profile.name}</span>
+        <span>Designed and developed with care.</span>
+      </div>
+    </footer>
   );
 }
 

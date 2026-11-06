@@ -1,0 +1,96 @@
+10b512ba67f24f6f02d34d192538c8ca
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _fi = require("react-icons/fi");
+
+var _profile = require("../../data/profile");
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\About\\Techstack.js";
+const icons = {
+  layers: _fi.FiLayers,
+  terminal: _fi.FiTerminal,
+  tool: _fi.FiTool
+};
+
+function Techstack() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+    className: "capability-grid",
+    children: _profile.capabilityGroups.map((group, index) => {
+      const Icon = icons[group.icon];
+      return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+        as: "article",
+        className: `capability-card${index === 0 ? " capability-card--featured" : ""}`,
+        delay: index % 2 * 70,
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "capability-card__top",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(Icon, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 51
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+            children: ["0", index + 1]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 78
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h3", {
+          children: group.title
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+          children: group.description
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+          children: group.technologies.map(technology => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+            children: technology
+          }, technology, false, {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 57
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 13
+        }, this)]
+      }, group.title, true, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 11
+      }, this);
+    })
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 18,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Techstack;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRlY2hzdGFjay5qcyJdLCJuYW1lcyI6WyJpY29ucyIsImxheWVycyIsIkZpTGF5ZXJzIiwidGVybWluYWwiLCJGaVRlcm1pbmFsIiwidG9vbCIsIkZpVG9vbCIsIlRlY2hzdGFjayIsImNhcGFiaWxpdHlHcm91cHMiLCJtYXAiLCJncm91cCIsImluZGV4IiwiSWNvbiIsImljb24iLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwidGVjaG5vbG9naWVzIiwidGVjaG5vbG9neSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBS0E7O0FBQ0E7Ozs7O0FBRUEsTUFBTUEsS0FBSyxHQUFHO0FBQ1pDLEVBQUFBLE1BQU0sRUFBRUMsWUFESTtBQUVaQyxFQUFBQSxRQUFRLEVBQUVDLGNBRkU7QUFHWkMsRUFBQUEsSUFBSSxFQUFFQztBQUhNLENBQWQ7O0FBTUEsU0FBU0MsU0FBVCxHQUFxQjtBQUNuQixzQkFDRTtBQUFLLElBQUEsU0FBUyxFQUFDLGlCQUFmO0FBQUEsY0FDR0MsMEJBQWlCQyxHQUFqQixDQUFxQixDQUFDQyxLQUFELEVBQVFDLEtBQVIsS0FBa0I7QUFDdEMsWUFBTUMsSUFBSSxHQUFHWixLQUFLLENBQUNVLEtBQUssQ0FBQ0csSUFBUCxDQUFsQjtBQUNBLDBCQUNFLDJCQUFDLGVBQUQ7QUFBUSxRQUFBLEVBQUUsRUFBQyxTQUFYO0FBQXFCLFFBQUEsU0FBUyxFQUFHLGtCQUFpQkYsS0FBSyxLQUFLLENBQVYsR0FBYyw0QkFBZCxHQUE2QyxFQUFHLEVBQWxHO0FBQXFHLFFBQUEsS0FBSyxFQUFHQSxLQUFLLEdBQUcsQ0FBVCxHQUFjLEVBQTFIO0FBQUEsZ0NBQ0U7QUFBSyxVQUFBLFNBQVMsRUFBQyxzQkFBZjtBQUFBLGtDQUFzQywyQkFBQyxJQUFEO0FBQU0sMkJBQVk7QUFBbEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFBdEMsZUFBaUU7QUFBQSw0QkFBUUEsS0FBSyxHQUFHLENBQWhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFBakU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURGLGVBRUU7QUFBQSxvQkFBS0QsS0FBSyxDQUFDSTtBQUFYO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBRkYsZUFHRTtBQUFBLG9CQUFJSixLQUFLLENBQUNLO0FBQVY7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFIRixlQUlFO0FBQUEsb0JBQUtMLEtBQUssQ0FBQ00sWUFBTixDQUFtQlAsR0FBbkIsQ0FBd0JRLFVBQUQsaUJBQWdCO0FBQUEsc0JBQXNCQTtBQUF0QixhQUFTQSxVQUFUO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBQXZDO0FBQUw7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFKRjtBQUFBLFNBQW1JUCxLQUFLLENBQUNJLEtBQXpJO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FERjtBQVFELEtBVkE7QUFESDtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUFlRDs7ZUFFY1AsUyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7XG4gIEZpTGF5ZXJzLFxuICBGaVRlcm1pbmFsLFxuICBGaVRvb2wsXG59IGZyb20gXCJyZWFjdC1pY29ucy9maVwiO1xuaW1wb3J0IHsgY2FwYWJpbGl0eUdyb3VwcyB9IGZyb20gXCIuLi8uLi9kYXRhL3Byb2ZpbGVcIjtcbmltcG9ydCBSZXZlYWwgZnJvbSBcIi4uL2NvbW1vbi9SZXZlYWxcIjtcblxuY29uc3QgaWNvbnMgPSB7XG4gIGxheWVyczogRmlMYXllcnMsXG4gIHRlcm1pbmFsOiBGaVRlcm1pbmFsLFxuICB0b29sOiBGaVRvb2wsXG59O1xuXG5mdW5jdGlvbiBUZWNoc3RhY2soKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjYXBhYmlsaXR5LWdyaWRcIj5cbiAgICAgIHtjYXBhYmlsaXR5R3JvdXBzLm1hcCgoZ3JvdXAsIGluZGV4KSA9PiB7XG4gICAgICAgIGNvbnN0IEljb24gPSBpY29uc1tncm91cC5pY29uXTtcbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICA8UmV2ZWFsIGFzPVwiYXJ0aWNsZVwiIGNsYXNzTmFtZT17YGNhcGFiaWxpdHktY2FyZCR7aW5kZXggPT09IDAgPyBcIiBjYXBhYmlsaXR5LWNhcmQtLWZlYXR1cmVkXCIgOiBcIlwifWB9IGRlbGF5PXsoaW5kZXggJSAyKSAqIDcwfSBrZXk9e2dyb3VwLnRpdGxlfT5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FwYWJpbGl0eS1jYXJkX190b3BcIj48SWNvbiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPjxzcGFuPjB7aW5kZXggKyAxfTwvc3Bhbj48L2Rpdj5cbiAgICAgICAgICAgIDxoMz57Z3JvdXAudGl0bGV9PC9oMz5cbiAgICAgICAgICAgIDxwPntncm91cC5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgICAgICA8dWw+e2dyb3VwLnRlY2hub2xvZ2llcy5tYXAoKHRlY2hub2xvZ3kpID0+IDxsaSBrZXk9e3RlY2hub2xvZ3l9Pnt0ZWNobm9sb2d5fTwvbGk+KX08L3VsPlxuICAgICAgICAgIDwvUmV2ZWFsPlxuICAgICAgICApO1xuICAgICAgfSl9XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IFRlY2hzdGFjaztcbiJdfQ==

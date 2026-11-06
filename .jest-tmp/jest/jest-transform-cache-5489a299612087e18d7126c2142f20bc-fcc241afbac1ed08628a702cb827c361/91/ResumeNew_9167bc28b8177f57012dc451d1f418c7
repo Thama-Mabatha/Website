@@ -1,0 +1,219 @@
+3323f5a8c96f066d5e4f9aa30bca6a39
+"use strict";
+
+var _interopRequireWildcard = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireWildcard.js").default;
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactPdf = require("react-pdf");
+
+var _fi = require("react-icons/fi");
+
+var _PageIntro = _interopRequireDefault(require("../common/PageIntro"));
+
+var _ThamaMabathaCV = _interopRequireDefault(require("../../Assets/Thama Mabatha CV.pdf"));
+
+require("react-pdf/dist/esm/Page/AnnotationLayer.css");
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Resume\\ResumeNew.js";
+_reactPdf.pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${_reactPdf.pdfjs.version}/pdf.worker.min.js`;
+
+function ResumeNew() {
+  const viewerRef = (0, _react.useRef)(null);
+  const [numPages, setNumPages] = (0, _react.useState)(0);
+  const [pageWidth, setPageWidth] = (0, _react.useState)(760);
+  (0, _react.useEffect)(() => {
+    const updateWidth = () => {
+      if (!viewerRef.current) return;
+      const available = viewerRef.current.clientWidth - 32;
+      setPageWidth(Math.min(760, Math.max(280, available)));
+    };
+
+    updateWidth();
+
+    if (typeof ResizeObserver !== "undefined") {
+      const observer = new ResizeObserver(updateWidth);
+      observer.observe(viewerRef.current);
+      return () => observer.disconnect();
+    }
+
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: "resume-page",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_PageIntro.default, {
+      eyebrow: "Resume",
+      title: "Experience, education and project work in one place.",
+      description: "View the supplied two-page CV below or download the original PDF. The document itself is preserved without modification."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "resume-actions-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell resume-actions",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow",
+            children: "Document"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+            children: "Thama Mabatha \xB7 Curriculum Vitae"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+            className: "button button--primary",
+            href: _ThamaMabathaCV.default,
+            download: "Thama-Mabatha-CV.pdf",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiDownload, {
+              "aria-hidden": "true"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 50,
+              columnNumber: 15
+            }, this), " Download CV"]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 49,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+            className: "button button--ghost",
+            href: _ThamaMabathaCV.default,
+            target: "_blank",
+            rel: "noreferrer",
+            children: ["Open PDF ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiExternalLink, {
+              "aria-hidden": "true"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 53,
+              columnNumber: 24
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 52,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "resume-viewer-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "resume-viewer",
+          ref: viewerRef,
+          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactPdf.Document, {
+            file: _ThamaMabathaCV.default,
+            onLoadSuccess: ({
+              numPages: loadedPages
+            }) => setNumPages(loadedPages),
+            loading: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              className: "document-state",
+              children: "Loading CV preview\u2026"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 65,
+              columnNumber: 24
+            }, this),
+            error: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              className: "document-state document-state--error",
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("strong", {
+                children: "The embedded preview could not load."
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 68,
+                columnNumber: 19
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+                children: "You can still download or open the original PDF above."
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 69,
+                columnNumber: 19
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 67,
+              columnNumber: 17
+            }, this),
+            className: "resume-document",
+            children: Array.from(new Array(numPages), (_, index) => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactPdf.Page, {
+              pageNumber: index + 1,
+              width: pageWidth,
+              renderTextLayer: false,
+              loading: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "document-state",
+                children: ["Rendering page ", index + 1, "\u2026"]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 80,
+                columnNumber: 28
+              }, this)
+            }, `page_${index + 1}`, false, {
+              fileName: _jsxFileName,
+              lineNumber: 75,
+              columnNumber: 17
+            }, this))
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 62,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = ResumeNew;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlc3VtZU5ldy5qcyJdLCJuYW1lcyI6WyJwZGZqcyIsIkdsb2JhbFdvcmtlck9wdGlvbnMiLCJ3b3JrZXJTcmMiLCJ2ZXJzaW9uIiwiUmVzdW1lTmV3Iiwidmlld2VyUmVmIiwibnVtUGFnZXMiLCJzZXROdW1QYWdlcyIsInBhZ2VXaWR0aCIsInNldFBhZ2VXaWR0aCIsInVwZGF0ZVdpZHRoIiwiY3VycmVudCIsImF2YWlsYWJsZSIsImNsaWVudFdpZHRoIiwiTWF0aCIsIm1pbiIsIm1heCIsIlJlc2l6ZU9ic2VydmVyIiwib2JzZXJ2ZXIiLCJvYnNlcnZlIiwiZGlzY29ubmVjdCIsIndpbmRvdyIsImFkZEV2ZW50TGlzdGVuZXIiLCJyZW1vdmVFdmVudExpc3RlbmVyIiwicGRmIiwibG9hZGVkUGFnZXMiLCJBcnJheSIsImZyb20iLCJfIiwiaW5kZXgiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBQ0E7O0FBQ0E7O0FBQ0E7Ozs7O0FBRUFBLGdCQUFNQyxtQkFBTixDQUEwQkMsU0FBMUIsR0FBdUMsaURBQWdERixnQkFBTUcsT0FBUSxvQkFBckc7O0FBRUEsU0FBU0MsU0FBVCxHQUFxQjtBQUNuQixRQUFNQyxTQUFTLEdBQUcsbUJBQU8sSUFBUCxDQUFsQjtBQUNBLFFBQU0sQ0FBQ0MsUUFBRCxFQUFXQyxXQUFYLElBQTBCLHFCQUFTLENBQVQsQ0FBaEM7QUFDQSxRQUFNLENBQUNDLFNBQUQsRUFBWUMsWUFBWixJQUE0QixxQkFBUyxHQUFULENBQWxDO0FBRUEsd0JBQVUsTUFBTTtBQUNkLFVBQU1DLFdBQVcsR0FBRyxNQUFNO0FBQ3hCLFVBQUksQ0FBQ0wsU0FBUyxDQUFDTSxPQUFmLEVBQXdCO0FBQ3hCLFlBQU1DLFNBQVMsR0FBR1AsU0FBUyxDQUFDTSxPQUFWLENBQWtCRSxXQUFsQixHQUFnQyxFQUFsRDtBQUNBSixNQUFBQSxZQUFZLENBQUNLLElBQUksQ0FBQ0MsR0FBTCxDQUFTLEdBQVQsRUFBY0QsSUFBSSxD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TEo7QUFVRSxZQUFBLFNBQVMsRUFBQyxpQkFWWjtBQUFBLHNCQVlHQyxLQUFLLENBQUNDLElBQU4sQ0FBVyxJQUFJRCxLQUFKLENBQVVwQixRQUFWLENBQVgsRUFBZ0MsQ0FBQ3NCLENBQUQsRUFBSUMsS0FBSixrQkFDL0IsMkJBQUMsY0FBRDtBQUVFLGNBQUEsVUFBVSxFQUFFQSxLQUFLLEdBQUcsQ0FGdEI7QUFHRSxjQUFBLEtBQUssRUFBRXJCLFNBSFQ7QUFJRSxjQUFBLGVBQWUsRUFBRSxLQUpuQjtBQUtFLGNBQUEsT0FBTyxlQUFFO0FBQUssZ0JBQUEsU0FBUyxFQUFDLGdCQUFmO0FBQUEsOENBQWdEcUIsS0FBSyxHQUFHLENBQXhEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUxYLGVBQ1EsUUFBT0EsS0FBSyxHQUFHLENBQUUsRUFEekI7QUFBQTtBQUFBO0FBQUE7QUFBQSxvQkFERDtBQVpIO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUF4QkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUF1REQ7O2VBRWN6QixTIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IHVzZUVmZmVjdCwgdXNlUmVmLCB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgRG9jdW1lbnQsIFBhZ2UsIHBkZmpzIH0gZnJvbSBcInJlYWN0LXBkZlwiO1xuaW1wb3J0IHsgRmlEb3dubG9hZCwgRmlFeHRlcm5hbExpbmsgfSBmcm9tIFwicmVhY3QtaWNvbnMvZmlcIjtcbmltcG9ydCBQYWdlSW50cm8gZnJvbSBcIi4uL2NvbW1vbi9QYWdlSW50cm9cIjtcbmltcG9ydCBwZGYgZnJvbSBcIi4uLy4uL0Fzc2V0cy9UaGFtYSBNYWJhdGhhIENWLnBkZlwiO1xuaW1wb3J0IFwicmVhY3QtcGRmL2Rpc3QvZXNtL1BhZ2UvQW5ub3RhdGlvbkxheWVyLmNzc1wiO1xuXG5wZGZqcy5HbG9iYWxXb3JrZXJPcHRpb25zLndvcmtlclNyYyA9IGBodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9wZGYuanMvJHtwZGZqcy52ZXJzaW9ufS9wZGYud29ya2VyLm1pbi5qc2A7XG5cbmZ1bmN0aW9uIFJlc3VtZU5ldygpIHtcbiAgY29uc3Qgdmlld2VyUmVmID0gdXNlUmVmKG51bGwpO1xuICBjb25zdCBbbnVtUGFnZXMsIHNldE51bVBhZ2VzXSA9IHVzZVN0YXRlKDApO1xuICBjb25zdCBbcGFnZVdpZHRoLCBzZXRQYWdlV2lkdGhdID0gdXNlU3RhdGUoNzYwKTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGNvbnN0IHVwZGF0ZVdpZHRoID0gKCkgPT4ge1xuICAgICAgaWYgKCF2aWV3ZXJSZWYuY3VycmVudCkgcmV0dXJuO1xuICAgICAgY29uc3QgYXZhaWxhYmxlID0gdmlld2VyUmVmLmN1cnJlbnQuY2xpZW50V2lkdGggLSAzMjtcbiAgICAgIHNldFBhZ2VXaWR0aChNYXRoLm1pbig3NjAsIE1hdGgubWF4KDI4MCwgYXZhaWxhYmxlKSkpO1xuICAgIH07XG5cbiAgICB1cGRhdGVXaWR0aCgpO1xuXG4gICAgaWYgKHR5cGVvZiBSZXNpemVPYnNlcnZlciAhPT0gXCJ1bmRlZmluZWRcIikge1xuICAgICAgY29uc3Qgb2JzZXJ2ZXIgPSBuZXcgUmVzaXplT2JzZXJ2ZXIodXBkYXRlV2lkdGgpO1xuICAgICAgb2JzZXJ2ZXIub2JzZXJ2ZSh2aWV3ZXJSZWYuY3VycmVudCk7XG4gICAgICByZXR1cm4gKCkgPT4gb2JzZXJ2ZXIuZGlzY29ubmVjdCgpO1xuICAgIH1cblxuICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKFwicmVzaXplXCIsIHVwZGF0ZVdpZHRoKTtcbiAgICByZXR1cm4gKCkgPT4gd2luZG93LnJlbW92ZUV2ZW50TGlzdGVuZXIoXCJyZXNpemVcIiwgdXBkYXRlV2lkdGgpO1xuICB9LCBbXSk7XG5cbiAgcmV0dXJuIChcbiAgICA8bWFpbiBjbGFzc05hbWU9XCJyZXN1bWUtcGFnZVwiPlxuICAgICAgPFBhZ2VJbnRyb1xuICAgICAgICBleWVicm93PVwiUmVzdW1lXCJcbiAgICAgICAgdGl0bGU9XCJFeHBlcmllbmNlLCBlZHVjYXRpb24gYW5kIHByb2plY3Qgd29yayBpbiBvbmUgcGxhY2UuXCJcbiAgICAgICAgZGVzY3JpcHRpb249XCJWaWV3IHRoZSBzdXBwbGllZCB0d28tcGFnZSBDViBiZWxvdyBvciBkb3dubG9hZCB0aGUgb3JpZ2luYWwgUERGLiBUaGUgZG9jdW1lbnQgaXRzZWxmIGlzIHByZXNlcnZlZCB3aXRob3V0IG1vZGlmaWNhdGlvbi5cIlxuICAgICAgLz5cblxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicmVzdW1lLWFjdGlvbnMtc2VjdGlvblwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGwgcmVzdW1lLWFjdGlvbnNcIj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPkRvY3VtZW50PC9wPlxuICAgICAgICAgICAgPGgyPlRoYW1hIE1hYmF0aGEgwrcgQ3VycmljdWx1bSBWaXRhZTwvaDI+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tLXByaW1hcnlcIiBocmVmPXtwZGZ9IGRvd25sb2FkPVwiVGhhbWEtTWFiYXRoYS1DVi5wZGZcIj5cbiAgICAgICAgICAgICAgPEZpRG93bmxvYWQgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz4gRG93bmxvYWQgQ1ZcbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tLWdob3N0XCIgaHJlZj17cGRmfSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCI+XG4gICAgICAgICAgICAgIE9wZW4gUERGIDxGaUV4dGVybmFsTGluayBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicmVzdW1lLXZpZXdlci1zZWN0aW9uXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVzdW1lLXZpZXdlclwiIHJlZj17dmlld2VyUmVmfT5cbiAgICAgICAgICAgIDxEb2N1bWVudFxuICAgICAgICAgICAgICBmaWxlPXtwZGZ9XG4gICAgICAgICAgICAgIG9uTG9hZFN1Y2Nlc3M9eyh7IG51bVBhZ2VzOiBsb2FkZWRQYWdlcyB9KSA9PiBzZXROdW1QYWdlcyhsb2FkZWRQYWdlcyl9XG4gICAgICAgICAgICAgIGxvYWRpbmc9ezxkaXYgY2xhc3NOYW1lPVwiZG9jdW1lbnQtc3RhdGVcIj5Mb2FkaW5nIENWIHByZXZpZXfigKY8L2Rpdj59XG4gICAgICAgICAgICAgIGVycm9yPXtcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImRvY3VtZW50LXN0YXRlIGRvY3VtZW50LXN0YXRlLS1lcnJvclwiPlxuICAgICAgICAgICAgICAgICAgPHN0cm9uZz5UaGUgZW1iZWRkZWQgcHJldmlldyBjb3VsZCBub3QgbG9hZC48L3N0cm9uZz5cbiAgICAgICAgICAgICAgICAgIDxzcGFuPllvdSBjYW4gc3RpbGwgZG93bmxvYWQgb3Igb3BlbiB0aGUgb3JpZ2luYWwgUERGIGFib3ZlLjwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyZXN1bWUtZG9jdW1lbnRcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICB7QXJyYXkuZnJvbShuZXcgQXJyYXkobnVtUGFnZXMpLCAoXywgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgICA8UGFnZVxuICAgICAgICAgICAgICAgICAga2V5PXtgcGFnZV8ke2luZGV4ICsgMX1gfVxuICAgICAgICAgICAgICAgICAgcGFnZU51bWJlcj17aW5kZXggKyAxfVxuICAgICAgICAgICAgICAgICAgd2lkdGg9e3BhZ2VXaWR0aH1cbiAgICAgICAgICAgICAgICAgIHJlbmRlclRleHRMYXllcj17ZmFsc2V9XG4gICAgICAgICAgICAgICAgICBsb2FkaW5nPXs8ZGl2IGNsYXNzTmFtZT1cImRvY3VtZW50LXN0YXRlXCI+UmVuZGVyaW5nIHBhZ2Uge2luZGV4ICsgMX3igKY8L2Rpdj59XG4gICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICA8L0RvY3VtZW50PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICA8L21haW4+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IFJlc3VtZU5ldztcbiJdfQ==

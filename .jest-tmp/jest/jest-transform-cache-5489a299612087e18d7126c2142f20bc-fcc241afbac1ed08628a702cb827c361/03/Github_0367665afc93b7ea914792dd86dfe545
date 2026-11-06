@@ -1,0 +1,99 @@
+6fc58353a0b38f6b005c483457f15489
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactGithubCalendar = _interopRequireDefault(require("react-github-calendar"));
+
+var _fi = require("react-icons/fi");
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\About\\Github.js";
+
+function Github() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+    className: "github-panel",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "github-panel__heading",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+          className: "eyebrow",
+          children: "GitHub activity"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 14
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+          children: "Learning and building in public."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 56
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "https://github.com/Thama-Mabatha",
+        target: "_blank",
+        rel: "noreferrer",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiGithub, {}, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 85
+        }, this), " @Thama-Mabatha"]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "github-panel__calendar",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactGithubCalendar.default, {
+        username: "Thama-Mabatha",
+        blockSize: 13,
+        blockMargin: 5,
+        color: "#8cb8e8",
+        fontSize: 13
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+      className: "github-panel__note",
+      children: "Contribution data is loaded from GitHub and may be unavailable when the service or network is offline."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Github;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkdpdGh1Yi5qcyJdLCJuYW1lcyI6WyJHaXRodWIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxNQUFULEdBQWtCO0FBQ2hCLHNCQUNFLDJCQUFDLGVBQUQ7QUFBUSxJQUFBLFNBQVMsRUFBQyxjQUFsQjtBQUFBLDRCQUNFO0FBQUssTUFBQSxTQUFTLEVBQUMsdUJBQWY7QUFBQSw4QkFDRTtBQUFBLGdDQUFLO0FBQUcsVUFBQSxTQUFTLEVBQUMsU0FBYjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFBTCxlQUErQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFBL0M7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBREYsZUFFRTtBQUFHLFFBQUEsSUFBSSxFQUFDLGtDQUFSO0FBQTJDLFFBQUEsTUFBTSxFQUFDLFFBQWxEO0FBQTJELFFBQUEsR0FBRyxFQUFDLFlBQS9EO0FBQUEsZ0NBQTRFLDJCQUFDLFlBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFBNUU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBRkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBREYsZUFLRTtBQUFLLE1BQUEsU0FBUyxFQUFDLHdCQUFmO0FBQUEsNkJBQ0UsMkJBQUMsNEJBQUQ7QUFBZ0IsUUFBQSxRQUFRLEVBQUMsZUFBekI7QUFBeUMsUUFBQSxTQUFTLEVBQUUsRUFBcEQ7QUFBd0QsUUFBQSxXQUFXLEVBQUUsQ0FBckU7QUFBd0UsUUFBQSxLQUFLLEVBQUMsU0FBOUU7QUFBd0YsUUFBQSxRQUFRLEVBQUU7QUFBbEc7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFMRixlQVFFO0FBQUcsTUFBQSxTQUFTLEVBQUMsb0JBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFSRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQVlEOztlQUVjQSxNIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IEdpdEh1YkNhbGVuZGFyIGZyb20gXCJyZWFjdC1naXRodWItY2FsZW5kYXJcIjtcbmltcG9ydCB7IEZpR2l0aHViIH0gZnJvbSBcInJlYWN0LWljb25zL2ZpXCI7XG5pbXBvcnQgUmV2ZWFsIGZyb20gXCIuLi9jb21tb24vUmV2ZWFsXCI7XG5cbmZ1bmN0aW9uIEdpdGh1YigpIHtcbiAgcmV0dXJuIChcbiAgICA8UmV2ZWFsIGNsYXNzTmFtZT1cImdpdGh1Yi1wYW5lbFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJnaXRodWItcGFuZWxfX2hlYWRpbmdcIj5cbiAgICAgICAgPGRpdj48cCBjbGFzc05hbWU9XCJleWVicm93XCI+R2l0SHViIGFjdGl2aXR5PC9wPjxoMj5MZWFybmluZyBhbmQgYnVpbGRpbmcgaW4gcHVibGljLjwvaDI+PC9kaXY+XG4gICAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vVGhhbWEtTWFiYXRoYVwiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vcmVmZXJyZXJcIj48RmlHaXRodWIgLz4gQFRoYW1hLU1hYmF0aGE8L2E+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2l0aHViLXBhbmVsX19jYWxlbmRhclwiPlxuICAgICAgICA8R2l0SHViQ2FsZW5kYXIgdXNlcm5hbWU9XCJUaGFtYS1NYWJhdGhhXCIgYmxvY2tTaXplPXsxM30gYmxvY2tNYXJnaW49ezV9IGNvbG9yPVwiIzhjYjhlOFwiIGZvbnRTaXplPXsxM30gLz5cbiAgICAgIDwvZGl2PlxuICAgICAgPHAgY2xhc3NOYW1lPVwiZ2l0aHViLXBhbmVsX19ub3RlXCI+Q29udHJpYnV0aW9uIGRhdGEgaXMgbG9hZGVkIGZyb20gR2l0SHViIGFuZCBtYXkgYmUgdW5hdmFpbGFibGUgd2hlbiB0aGUgc2VydmljZSBvciBuZXR3b3JrIGlzIG9mZmxpbmUuPC9wPlxuICAgIDwvUmV2ZWFsPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBHaXRodWI7XG4iXX0=

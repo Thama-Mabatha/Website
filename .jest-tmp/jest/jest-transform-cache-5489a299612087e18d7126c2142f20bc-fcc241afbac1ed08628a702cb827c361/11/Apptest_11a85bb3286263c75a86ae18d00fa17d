@@ -1,0 +1,27 @@
+ed19d70a70b37120af1e462775c09f3b
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+var _react = require("@testing-library/react");
+
+var _App = _interopRequireDefault(require("./App"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\App.test.js";
+test("renders the portfolio owner and primary projects navigation", () => {
+  window.scrollTo = jest.fn();
+  (0, _react.render)( /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_App.default, {}, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 10
+  }, void 0));
+  expect(_react.screen.getByRole("heading", {
+    name: /i love turning ideas into experiences people can use/i
+  })).toBeInTheDocument();
+  expect(_react.screen.getByRole("link", {
+    name: /explore projects/i
+  })).toBeInTheDocument();
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC50ZXN0LmpzIl0sIm5hbWVzIjpbInRlc3QiLCJ3aW5kb3ciLCJzY3JvbGxUbyIsImplc3QiLCJmbiIsImV4cGVjdCIsInNjcmVlbiIsImdldEJ5Um9sZSIsIm5hbWUiLCJ0b0JlSW5UaGVEb2N1bWVudCJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBOztBQUNBOzs7OztBQUVBQSxJQUFJLENBQUMsNkRBQUQsRUFBZ0UsTUFBTTtBQUN4RUMsRUFBQUEsTUFBTSxDQUFDQyxRQUFQLEdBQWtCQyxJQUFJLENBQUNDLEVBQUwsRUFBbEI7QUFDQSxtQ0FBTywyQkFBQyxZQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFBUDtBQUNBQyxFQUFBQSxNQUFNLENBQUNDLGNBQU9DLFNBQVAsQ0FBaUIsU0FBakIsRUFBNEI7QUFBRUMsSUFBQUEsSUFBSSxFQUFFO0FBQVIsR0FBNUIsQ0FBRCxDQUFOLENBQXVHQyxpQkFBdkc7QUFDQUosRUFBQUEsTUFBTSxDQUFDQyxjQUFPQyxTQUFQLENBQWlCLE1BQWpCLEVBQXlCO0FBQUVDLElBQUFBLElBQUksRUFBRTtBQUFSLEdBQXpCLENBQUQsQ0FBTixDQUFnRUMsaUJBQWhFO0FBQ0QsQ0FMRyxDQUFKIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgcmVuZGVyLCBzY3JlZW4gfSBmcm9tIFwiQHRlc3RpbmctbGlicmFyeS9yZWFjdFwiO1xuaW1wb3J0IEFwcCBmcm9tIFwiLi9BcHBcIjtcblxudGVzdChcInJlbmRlcnMgdGhlIHBvcnRmb2xpbyBvd25lciBhbmQgcHJpbWFyeSBwcm9qZWN0cyBuYXZpZ2F0aW9uXCIsICgpID0+IHtcbiAgd2luZG93LnNjcm9sbFRvID0gamVzdC5mbigpO1xuICByZW5kZXIoPEFwcCAvPik7XG4gIGV4cGVjdChzY3JlZW4uZ2V0QnlSb2xlKFwiaGVhZGluZ1wiLCB7IG5hbWU6IC9pIGxvdmUgdHVybmluZyBpZGVhcyBpbnRvIGV4cGVyaWVuY2VzIHBlb3BsZSBjYW4gdXNlL2kgfSkpLnRvQmVJblRoZURvY3VtZW50KCk7XG4gIGV4cGVjdChzY3JlZW4uZ2V0QnlSb2xlKFwibGlua1wiLCB7IG5hbWU6IC9leHBsb3JlIHByb2plY3RzL2kgfSkpLnRvQmVJblRoZURvY3VtZW50KCk7XG59KTtcbiJdfQ==

@@ -1,39 +1,39 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { FiEye, FiLayers, FiSliders } from "react-icons/fi";
+import Reveal from "../common/Reveal";
+
+const approach = [
+  {
+    icon: FiEye,
+    number: "01",
+    title: "Understand the real need",
+    text: "I like learning what someone wants from an application and what should feel easier when they use it.",
+  },
+  {
+    icon: FiLayers,
+    number: "02",
+    title: "Shape the whole experience",
+    text: "I think beyond the first requirement—how the flow connects, what information matters and where a small improvement could help.",
+  },
+  {
+    icon: FiSliders,
+    number: "03",
+    title: "Refine the small details",
+    text: "Spacing, wording, feedback and responsive behaviour all influence whether a product simply works or feels considered.",
+  },
+];
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Thama Mabatha </span>
-            from <span className="purple">  Thohoyandou, South Africa currently based in Johannesburg.</span> 
-            <br />
-          I am a final year BSc Information Technology student at the University of Johannesburg. 
-            <br />
-            When I'm not focused on my studies, I love to step away from the keyboard and explore other passions. Here are a few things I enjoy:
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Gaming
-            </li>
-            <li className="about-activity">
-              <ImPointRight />  Cooking and trying new recipes
-            </li>
-            <li className="about-activity">
-              <ImPointRight />  Going on new adventures Anything thrill-seeking
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Always seeking, always learning—because knowledge is endless, and there’s always more to grow from "
-          </p>
-          <footer className="blockquote-footer">Thama</footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
+    <div className="approach-grid">
+      {approach.map(({ icon: Icon, number, title, text }, index) => (
+        <Reveal as="article" className="approach-card" delay={index * 90} key={title}>
+          <div className="approach-card__top"><Icon aria-hidden="true" /><span>{number}</span></div>
+          <h3>{title}</h3>
+          <p>{text}</p>
+        </Reveal>
+      ))}
+    </div>
   );
 }
 

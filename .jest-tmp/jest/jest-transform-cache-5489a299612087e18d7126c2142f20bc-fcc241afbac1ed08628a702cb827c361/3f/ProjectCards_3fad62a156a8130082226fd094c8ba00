@@ -1,0 +1,147 @@
+f078f26b27e11dd5345dcf7083cb1b2b
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _fi = require("react-icons/fi");
+
+var _ProjectVisual = _interopRequireDefault(require("./ProjectVisual"));
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Projects\\ProjectCards.js";
+
+function ProjectCard({
+  project,
+  index = 0
+}) {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+    as: "article",
+    className: `project-card-modern project-card-modern--${project.accent}`,
+    delay: index % 2 * 90,
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectVisual.default, {
+      project: project
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "project-card-modern__body",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "project-card-modern__meta",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: project.category
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h3", {
+        children: project.name
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 15,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+        children: project.shortSummary
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+        className: "tag-list tag-list--small",
+        children: project.stack.slice(0, 4).map(technology => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+          children: technology
+        }, technology, false, {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 58
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "project-card-modern__links",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          to: `/projects/${project.slug}`,
+          "aria-label": `View ${project.name} details`,
+          children: ["View Details ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiArrowUpRight, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 26
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 11
+        }, this), project.github && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+          href: project.github,
+          target: "_blank",
+          rel: "noreferrer",
+          "aria-label": `${project.name} GitHub repository`,
+          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiGithub, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 15
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 13
+        }, this), project.demo && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+          href: project.demo,
+          target: "_blank",
+          rel: "noreferrer",
+          "aria-label": `${project.name} live demo`,
+          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiExternalLink, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 15
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = ProjectCard;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3RDYXJkcy5qcyJdLCJuYW1lcyI6WyJQcm9qZWN0Q2FyZCIsInByb2plY3QiLCJpbmRleCIsImFjY2VudCIsImNhdGVnb3J5IiwibmFtZSIsInNob3J0U3VtbWFyeSIsInN0YWNrIiwic2xpY2UiLCJtYXAiLCJ0ZWNobm9sb2d5Iiwic2x1ZyIsImdpdGh1YiIsImRlbW8iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxXQUFULENBQXFCO0FBQUVDLEVBQUFBLE9BQUY7QUFBV0MsRUFBQUEsS0FBSyxHQUFHO0FBQW5CLENBQXJCLEVBQTZDO0FBQzNDLHNCQUNFLDJCQUFDLGVBQUQ7QUFBUSxJQUFBLEVBQUUsRUFBQyxTQUFYO0FBQXFCLElBQUEsU0FBUyxFQUFHLDRDQUEyQ0QsT0FBTyxDQUFDRSxNQUFPLEVBQTNGO0FBQThGLElBQUEsS0FBSyxFQUFHRCxLQUFLLEdBQUcsQ0FBVCxHQUFjLEVBQW5IO0FBQUEsNEJBQ0UsMkJBQUMsc0JBQUQ7QUFBZSxNQUFBLE9BQU8sRUFBRUQ7QUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxZQURGLGVBRUU7QUFBSyxNQUFBLFNBQVMsRUFBQywyQkFBZjtBQUFBLDhCQUNFO0FBQUssUUFBQSxTQUFTLEVBQUMsMkJBQWY7QUFBQSwrQkFDRTtBQUFBLG9CQUFPQSxPQUFPLENBQUNHO0FBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FERixlQUlFO0FBQUEsa0JBQUtILE9BQU8sQ0FBQ0k7QUFBYjtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBSkYsZUFLRTtBQUFBLGtCQUFJSixPQUFPLENBQUNLO0FBQVo7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQUxGLGVBTUU7QUFBSSxRQUFBLFNBQVMsRUFBQywwQkFBZDtBQUFBLGtCQUNHTCxPQUFPLENBQUNNLEtBQVIsQ0FBY0MsS0FBZCxDQUFvQixDQUFwQixFQUF1QixDQUF2QixFQUEwQkMsR0FBMUIsQ0FBK0JDLFVBQUQsaUJBQWdCO0FBQUEsb0JBQXNCQTtBQUF0QixXQUFTQSxVQUFUO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBQTlDO0FBREg7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQU5GLGVBU0U7QUFBSyxRQUFBLFNBQVMsRUFBQyw0QkFBZjtBQUFBLGdDQUNFLDJCQUFDLG9CQUFEO0FBQU0sVUFBQSxFQUFFLEVBQUcsYUFBWVQsT0FBTyxDQUFDVSxJQUFLLEVBQXBDO0FBQXVDLHdCQUFhLFFBQU9WLE9BQU8sQ0FBQ0ksSUFBSyxVQUF4RTtBQUFBLG1EQUNlLDJCQUFDLGtCQUFEO0FBQWdCLDJCQUFZO0FBQTVCO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBRGY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURGLEVBSUdKLE9BQU8sQ0FBQ1csTUFBUixpQkFDQztBQUFHLFVBQUEsSUFBSSxFQUFFWCxPQUFPLENBQUNXLE1BQWpCO0FBQXlCLFVBQUEsTUFBTSxFQUFDLFFBQWhDO0FBQXlDLFVBQUEsR0FBRyxFQUFDLFlBQTdDO0FBQTBELHdCQUFhLEdBQUVYLE9BQU8sQ0FBQ0ksSUFBSyxvQkFBdEY7QUFBQSxpQ0FDRSwyQkFBQyxZQUFEO0FBQVUsMkJBQVk7QUFBdEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBTEosRUFTR0osT0FBTyxDQUFDWSxJQUFSLGlCQUNDO0FBQUcsVUFBQSxJQUFJLEVBQUVaLE9BQU8sQ0FBQ1ksSUFBakI7QUFBdUIsVUFBQSxNQUFNLEVBQUMsUUFBOUI7QUFBdUMsVUFBQSxHQUFHLEVBQUMsWUFBM0M7QUFBd0Qsd0JBQWEsR0FBRVosT0FBTyxDQUFDSSxJQUFLLFlBQXBGO0FBQUEsaUNBQ0UsMkJBQUMsa0JBQUQ7QUFBZ0IsMkJBQVk7QUFBNUI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBVko7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBVEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBRkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUE4QkQ7O2VBRWNMLFciLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBMaW5rIH0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCB7IEZpQXJyb3dVcFJpZ2h0LCBGaUV4dGVybmFsTGluaywgRmlHaXRodWIgfSBmcm9tIFwicmVhY3QtaWNvbnMvZmlcIjtcbmltcG9ydCBQcm9qZWN0VmlzdWFsIGZyb20gXCIuL1Byb2plY3RWaXN1YWxcIjtcbmltcG9ydCBSZXZlYWwgZnJvbSBcIi4uL2NvbW1vbi9SZXZlYWxcIjtcblxuZnVuY3Rpb24gUHJvamVjdENhcmQoeyBwcm9qZWN0LCBpbmRleCA9IDAgfSkge1xuICByZXR1cm4gKFxuICAgIDxSZXZlYWwgYXM9XCJhcnRpY2xlXCIgY2xhc3NOYW1lPXtgcHJvamVjdC1jYXJkLW1vZGVybiBwcm9qZWN0LWNhcmQtbW9kZXJuLS0ke3Byb2plY3QuYWNjZW50fWB9IGRlbGF5PXsoaW5kZXggJSAyKSAqIDkwfT5cbiAgICAgIDxQcm9qZWN0VmlzdWFsIHByb2plY3Q9e3Byb2plY3R9IC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInByb2plY3QtY2FyZC1tb2Rlcm5fX2JvZHlcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwcm9qZWN0LWNhcmQtbW9kZXJuX19tZXRhXCI+XG4gICAgICAgICAgPHNwYW4+e3Byb2plY3QuY2F0ZWdvcnl9PC9zcGFuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGgzPntwcm9qZWN0Lm5hbWV9PC9oMz5cbiAgICAgICAgPHA+e3Byb2plY3Quc2hvcnRTdW1tYXJ5fTwvcD5cbiAgICAgICAgPHVsIGNsYXNzTmFtZT1cInRhZy1saXN0IHRhZy1saXN0LS1zbWFsbFwiPlxuICAgICAgICAgIHtwcm9qZWN0LnN0YWNrLnNsaWNlKDAsIDQpLm1hcCgodGVjaG5vbG9neSkgPT4gPGxpIGtleT17dGVjaG5vbG9neX0+e3RlY2hub2xvZ3l9PC9saT4pfVxuICAgICAgICA8L3VsPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInByb2plY3QtY2FyZC1tb2Rlcm5fX2xpbmtzXCI+XG4gICAgICAgICAgPExpbmsgdG89e2AvcHJvamVjdHMvJHtwcm9qZWN0LnNsdWd9YH0gYXJpYS1sYWJlbD17YFZpZXcgJHtwcm9qZWN0Lm5hbWV9IGRldGFpbHNgfT5cbiAgICAgICAgICAgIFZpZXcgRGV0YWlscyA8RmlBcnJvd1VwUmlnaHQgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAge3Byb2plY3QuZ2l0aHViICYmIChcbiAgICAgICAgICAgIDxhIGhyZWY9e3Byb2plY3QuZ2l0aHVifSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCIgYXJpYS1sYWJlbD17YCR7cHJvamVjdC5uYW1lfSBHaXRIdWIgcmVwb3NpdG9yeWB9PlxuICAgICAgICAgICAgICA8RmlHaXRodWIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICApfVxuICAgICAgICAgIHtwcm9qZWN0LmRlbW8gJiYgKFxuICAgICAgICAgICAgPGEgaHJlZj17cHJvamVjdC5kZW1vfSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCIgYXJpYS1sYWJlbD17YCR7cHJvamVjdC5uYW1lfSBsaXZlIGRlbW9gfT5cbiAgICAgICAgICAgICAgPEZpRXh0ZXJuYWxMaW5rIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L1JldmVhbD5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgUHJvamVjdENhcmQ7XG4iXX0=

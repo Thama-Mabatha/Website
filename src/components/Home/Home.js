@@ -1,48 +1,46 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+import { Link } from "react-router-dom";
+import { FiArrowRight, FiMapPin } from "react-icons/fi";
+import TechnicalVisual from "./TechnicalVisual";
+import { profile } from "../../data/profile";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+    <main className="home-page">
+      <section className="landing-hero">
+        <div className="landing-hero__wash landing-hero__wash--blue" aria-hidden="true" />
+        <div className="landing-hero__wash landing-hero__wash--pink" aria-hidden="true" />
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> THAMA MABATHA</strong>
-              </h1>
+        <div className="page-shell landing-hero__inner">
+          <div className="landing-hero__copy">
+            <p className="eyebrow hero-enter hero-enter--one">Hello, I’m Thama.</p>
+            <h1 className="hero-enter hero-enter--two">
+              I love turning <span>ideas</span> into experiences people can use.
+            </h1>
+            <p className="landing-hero__intro hero-enter hero-enter--three">
+              {profile.introduction}
+            </p>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
+            <div className="landing-hero__actions hero-enter hero-enter--four">
+              <Link className="button button--primary" to="/projects">
+                Explore Projects <FiArrowRight aria-hidden="true" />
+              </Link>
+              <Link className="button button--text" to="/about">
+                About Me
+              </Link>
+            </div>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Home2 />
-    </section>
+            <p className="landing-hero__location hero-enter hero-enter--four">
+              <FiMapPin aria-hidden="true" /> Frontend-focused · {profile.location}
+            </p>
+          </div>
+
+          <div className="landing-hero__visual hero-enter hero-enter--visual">
+            <TechnicalVisual />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
 

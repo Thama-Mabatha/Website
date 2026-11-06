@@ -1,0 +1,152 @@
+a1196b123fedc76fbb26c6dca33548f7
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _fi = require("react-icons/fi");
+
+var _ProjectVisual = _interopRequireDefault(require("./ProjectVisual"));
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Projects\\FeaturedProject.js";
+
+function FeaturedProject({
+  project,
+  index
+}) {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+    as: "article",
+    className: `featured-project featured-project--${project.accent}`,
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "featured-project__visual",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectVisual.default, {
+        project: project,
+        eager: index === 0
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "featured-project__content",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "featured-project__meta",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: ["Featured \xB7 0", index + 1]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          children: project.status
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+        className: "eyebrow",
+        children: project.category
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+        children: project.name
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+        children: project.shortSummary
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+        className: "tag-list",
+        "aria-label": `${project.name} technologies`,
+        children: project.stack.slice(0, 6).map(technology => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+          children: technology
+        }, technology, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 13
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 22,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "project-links",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          className: "text-link",
+          to: `/projects/${project.slug}`,
+          children: ["View Details ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiArrowUpRight, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 30,
+            columnNumber: 26
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 11
+        }, this), project.github && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+          className: "icon-link",
+          href: project.github,
+          target: "_blank",
+          rel: "noreferrer",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiGithub, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 15
+          }, this), " Repository"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = FeaturedProject;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkZlYXR1cmVkUHJvamVjdC5qcyJdLCJuYW1lcyI6WyJGZWF0dXJlZFByb2plY3QiLCJwcm9qZWN0IiwiaW5kZXgiLCJhY2NlbnQiLCJzdGF0dXMiLCJjYXRlZ29yeSIsIm5hbWUiLCJzaG9ydFN1bW1hcnkiLCJzdGFjayIsInNsaWNlIiwibWFwIiwidGVjaG5vbG9neSIsInNsdWciLCJnaXRodWIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxlQUFULENBQXlCO0FBQUVDLEVBQUFBLE9BQUY7QUFBV0MsRUFBQUE7QUFBWCxDQUF6QixFQUE2QztBQUMzQyxzQkFDRSwyQkFBQyxlQUFEO0FBQVEsSUFBQSxFQUFFLEVBQUMsU0FBWDtBQUFxQixJQUFBLFNBQVMsRUFBRyxzQ0FBcUNELE9BQU8sQ0FBQ0UsTUFBTyxFQUFyRjtBQUFBLDRCQUNFO0FBQUssTUFBQSxTQUFTLEVBQUMsMEJBQWY7QUFBQSw2QkFDRSwyQkFBQyxzQkFBRDtBQUFlLFFBQUEsT0FBTyxFQUFFRixPQUF4QjtBQUFpQyxRQUFBLEtBQUssRUFBRUMsS0FBSyxLQUFLO0FBQWxEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBREYsZUFJRTtBQUFLLE1BQUEsU0FBUyxFQUFDLDJCQUFmO0FBQUEsOEJBQ0U7QUFBSyxRQUFBLFNBQVMsRUFBQyx3QkFBZjtBQUFBLGdDQUNFO0FBQUEsd0NBQW1CQSxLQUFLLEdBQUcsQ0FBM0I7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURGLGVBRUU7QUFBQSxvQkFBT0QsT0FBTyxDQUFDRztBQUFmO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBRkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBREYsZUFLRTtBQUFHLFFBQUEsU0FBUyxFQUFDLFNBQWI7QUFBQSxrQkFBd0JILE9BQU8sQ0FBQ0k7QUFBaEM7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQUxGLGVBTUU7QUFBQSxrQkFBS0osT0FBTyxDQUFDSztBQUFiO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FORixlQU9FO0FBQUEsa0JBQUlMLE9BQU8sQ0FBQ007QUFBWjtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBUEYsZUFTRTtBQUFJLFFBQUEsU0FBUyxFQUFDLFVBQWQ7QUFBeUIsc0JBQWEsR0FBRU4sT0FBTyxDQUFDSyxJQUFLLGVBQXJEO0FBQUEsa0JBQ0dMLE9BQU8sQ0FBQ08sS0FBUixDQUFjQyxLQUFkLENBQW9CLENBQXBCLEVBQXVCLENBQXZCLEVBQTBCQyxHQUExQixDQUErQkMsVUFBRCxpQkFDN0I7QUFBQSxvQkFBc0JBO0FBQXRCLFdBQVNBLFVBQVQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFERDtBQURIO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FURixlQWVFO0FBQUssUUFBQSxTQUFTLEVBQUMsZUFBZjtBQUFBLGdDQUNFLDJCQUFDLG9CQUFEO0FBQU0sVUFBQSxTQUFTLEVBQUMsV0FBaEI7QUFBNEIsVUFBQSxFQUFFLEVBQUcsYUFBWVYsT0FBTyxDQUFDVyxJQUFLLEVBQTFEO0FBQUEsbURBQ2UsMkJBQUMsa0JBQUQ7QUFBZ0IsMkJBQVk7QUFBNUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFEZjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBREYsRUFJR1gsT0FBTyxDQUFDWSxNQUFSLGlCQUNDO0FBQUcsVUFBQSxTQUFTLEVBQUMsV0FBYjtBQUF5QixVQUFBLElBQUksRUFBRVosT0FBTyxDQUFDWSxNQUF2QztBQUErQyxVQUFBLE1BQU0sRUFBQyxRQUF0RDtBQUErRCxVQUFBLEdBQUcsRUFBQyxZQUFuRTtBQUFBLGtDQUNFLDJCQUFDLFlBQUQ7QUFBVSwyQkFBWTtBQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGtCQURGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFMSjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FmRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFKRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQWlDRDs7ZUFFY2IsZSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IExpbmsgfSBmcm9tIFwicmVhY3Qtcm91dGVyLWRvbVwiO1xuaW1wb3J0IHsgRmlBcnJvd1VwUmlnaHQsIEZpR2l0aHViIH0gZnJvbSBcInJlYWN0LWljb25zL2ZpXCI7XG5pbXBvcnQgUHJvamVjdFZpc3VhbCBmcm9tIFwiLi9Qcm9qZWN0VmlzdWFsXCI7XG5pbXBvcnQgUmV2ZWFsIGZyb20gXCIuLi9jb21tb24vUmV2ZWFsXCI7XG5cbmZ1bmN0aW9uIEZlYXR1cmVkUHJvamVjdCh7IHByb2plY3QsIGluZGV4IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8UmV2ZWFsIGFzPVwiYXJ0aWNsZVwiIGNsYXNzTmFtZT17YGZlYXR1cmVkLXByb2plY3QgZmVhdHVyZWQtcHJvamVjdC0tJHtwcm9qZWN0LmFjY2VudH1gfT5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmVhdHVyZWQtcHJvamVjdF9fdmlzdWFsXCI+XG4gICAgICAgIDxQcm9qZWN0VmlzdWFsIHByb2plY3Q9e3Byb2plY3R9IGVhZ2VyPXtpbmRleCA9PT0gMH0gLz5cbiAgICAgIDwvZGl2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJmZWF0dXJlZC1wcm9qZWN0X19jb250ZW50XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmVhdHVyZWQtcHJvamVjdF9fbWV0YVwiPlxuICAgICAgICAgIDxzcGFuPkZlYXR1cmVkIMK3IDB7aW5kZXggKyAxfTwvc3Bhbj5cbiAgICAgICAgICA8c3Bhbj57cHJvamVjdC5zdGF0dXN9PC9zcGFuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPntwcm9qZWN0LmNhdGVnb3J5fTwvcD5cbiAgICAgICAgPGgyPntwcm9qZWN0Lm5hbWV9PC9oMj5cbiAgICAgICAgPHA+e3Byb2plY3Quc2hvcnRTdW1tYXJ5fTwvcD5cblxuICAgICAgICA8dWwgY2xhc3NOYW1lPVwidGFnLWxpc3RcIiBhcmlhLWxhYmVsPXtgJHtwcm9qZWN0Lm5hbWV9IHRlY2hub2xvZ2llc2B9PlxuICAgICAgICAgIHtwcm9qZWN0LnN0YWNrLnNsaWNlKDAsIDYpLm1hcCgodGVjaG5vbG9neSkgPT4gKFxuICAgICAgICAgICAgPGxpIGtleT17dGVjaG5vbG9neX0+e3RlY2hub2xvZ3l9PC9saT5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC91bD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInByb2plY3QtbGlua3NcIj5cbiAgICAgICAgICA8TGluayBjbGFzc05hbWU9XCJ0ZXh0LWxpbmtcIiB0bz17YC9wcm9qZWN0cy8ke3Byb2plY3Quc2x1Z31gfT5cbiAgICAgICAgICAgIFZpZXcgRGV0YWlscyA8RmlBcnJvd1VwUmlnaHQgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAge3Byb2plY3QuZ2l0aHViICYmIChcbiAgICAgICAgICAgIDxhIGNsYXNzTmFtZT1cImljb24tbGlua1wiIGhyZWY9e3Byb2plY3QuZ2l0aHVifSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCI+XG4gICAgICAgICAgICAgIDxGaUdpdGh1YiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPiBSZXBvc2l0b3J5XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L1JldmVhbD5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgRmVhdHVyZWRQcm9qZWN0O1xuIl19

@@ -1,0 +1,361 @@
+e970b34ee3286ad6034d2460f75a4a4f
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _fi = require("react-icons/fi");
+
+var _PageIntro = _interopRequireDefault(require("../common/PageIntro"));
+
+var _SectionHeading = _interopRequireDefault(require("../common/SectionHeading"));
+
+var _SocialLinks = _interopRequireDefault(require("../common/SocialLinks"));
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _AboutCard = _interopRequireDefault(require("./AboutCard"));
+
+var _Techstack = _interopRequireDefault(require("./Techstack"));
+
+var _Github = _interopRequireDefault(require("./Github"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\About\\About.js";
+const interests = [{
+  icon: _fi.FiMonitor,
+  label: "Gaming"
+}, {
+  icon: _fi.FiCoffee,
+  label: "Cooking and trying new recipes"
+}, {
+  icon: _fi.FiCompass,
+  label: "New and thrill-seeking experiences"
+}];
+
+function About() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: "about-page",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_PageIntro.default, {
+      eyebrow: "About me",
+      title: "I love coming up with an idea, picturing how it could look, and then bringing it to life.",
+      description: "Frontend development lets me combine creative thinking with the practical work of building something people can see, interact with and use."
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "about-story",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell about-story__grid",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow",
+            children: "A little more about me"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 30,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+            children: "I\u2019m happiest when an idea starts feeling real."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          className: "about-story__copy",
+          delay: 90,
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "I enjoy coming up with ideas and imagining how they could look and work. But what I love just as much is actually building them and seeing everything come together."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "I\u2019m also someone who enjoys refining things. Sometimes it\u2019s a small visual detail, an interaction or just finding a better way to make something work. I like going back and improving things until I\u2019m happy with the result."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 39,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "frontend-note",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell frontend-note__inner",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow",
+            children: "Why frontend"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 52,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("blockquote", {
+            children: "\u201CI love frontend development because I get to turn ideas into something people can actually see, interact with and use.\u201D"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 53,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 51,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          delay: 80,
+          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "I like working on the details people directly experience: responsive layouts, clear interactions, useful feedback and the quiet visual choices that make a product easier to understand."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 56,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "approach-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
+          eyebrow: "How I build",
+          title: "Thoughtful from the first question to the final detail."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 67,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_AboutCard.default, {}, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "skills-section",
+      id: "skills",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
+          eyebrow: "Technical skills",
+          title: "Frontend first, with experience across the tools that support the work.",
+          description: "A focused view of the technologies I use most and others I have worked with along the way."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 74,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Techstack.default, {}, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 79,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "interests-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell interests-section__grid",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
+          eyebrow: "Away from the keyboard",
+          title: "Curiosity needs room to wander."
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "interest-list",
+          children: interests.map(({
+            icon: Icon,
+            label
+          }, index) => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            delay: index * 70,
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(Icon, {
+              "aria-hidden": "true"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 88,
+              columnNumber: 54
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              children: label
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 88,
+              columnNumber: 81
+            }, this)]
+          }, label, true, {
+            fileName: _jsxFileName,
+            lineNumber: 88,
+            columnNumber: 15
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 86,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 84,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "connect-section",
+      id: "connect",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell connect-section__inner",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow",
+            children: "Let\u2019s connect"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 97,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+            children: "Have an idea, an opportunity or a thoughtful frontend challenge?"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 98,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "The verified public channels below are the best way to start a conversation."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 99,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 96,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+          className: "connect-section__actions",
+          delay: 90,
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+            className: "button button--primary",
+            to: "/resume",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiDownload, {}, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 102,
+              columnNumber: 67
+            }, this), " View & download CV"]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 102,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+            className: "button button--secondary",
+            to: "/projects",
+            children: ["See my projects ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiArrowRight, {}, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 103,
+              columnNumber: 87
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 103,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SocialLinks.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 104,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 101,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 95,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "github-section",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Github.default, {}, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 109,
+          columnNumber: 71
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 109,
+        columnNumber: 43
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 20,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = About;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0LmpzIl0sIm5hbWVzIjpbImludGVyZXN0cyIsImljb24iLCJGaU1vbml0b3IiLCJsYWJlbCIsIkZpQ29mZmVlIiwiRmlDb21wYXNzIiwiQWJvdXQiLCJtYXAiLCJJY29uIiwiaW5kZXgiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7OztBQUVBLE1BQU1BLFNBQVMsR0FBRyxDQUNoQjtBQUFFQyxFQUFBQSxJQUFJLEVBQUVDLGFBQVI7QUFBbUJDLEVBQUFBLEtBQUssRUFBRTtBQUExQixDQURnQixFQUVoQjtBQUFFRixFQUFBQSxJQUFJLEVBQUVHLFlBQVI7QUFBa0JELEVBQUFBLEtBQUssRUFBRTtBQUF6QixDQUZnQixFQUdoQjtBQUFFRixFQUFBQSxJQUFJLEVBQUVJLGFBQVI7QUFBbUJGLEVBQUFBLEtBQUssRUFBRTtBQUExQixDQUhnQixDQUFsQjs7QUFNQSxTQUFTRyxLQUFULEdBQWlCO0FBQ2Ysc0JBQ0U7QUFBTSxJQUFBLFNBQVMsRUFBQyxZQUFoQjtBQUFBLDRCQUNFLDJCQUFDLGtCQUFEO0FBQ0UsTUFBQSxPQUFPLEVBQUMsVUFEVjtBQUVFLE1BQUEsS0FBSyxFQUFDLDJGQUZSO0FBR0UsTUFBQSxXQUFXLEVBQUM7QUFIZDtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBREYsZUFPRTtBQUFTLE1BQUEsU0FBUyxFQUFDLGFBQW5CO0FBQUEsNkJBQ0U7QUFBSyxRQUFBLFNBQVMsRUFBQyw4QkFBZjtBQUFBLGdDQUNFLDJCQUFDLGVBQUQ7QUFBQSxrQ0FDRTtBQUFHLFlBQUEsU0FBUyxFQUFDLFNBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBREYsZUFFRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFGRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBREYsZUFLRSwyQkFBQyxlQUFEO0FBQVEsVUFBQSxT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QUFmO0FBQUEsK0JBQTRCLDJCQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUE1QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQXBDO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUF6RkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUE2RkQ7O2VBRWNHLEsiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBMaW5rIH0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCB7IEZpQXJyb3dSaWdodCwgRmlDb2ZmZWUsIEZpQ29tcGFzcywgRmlEb3dubG9hZCwgRmlNb25pdG9yIH0gZnJvbSBcInJlYWN0LWljb25zL2ZpXCI7XG5pbXBvcnQgUGFnZUludHJvIGZyb20gXCIuLi9jb21tb24vUGFnZUludHJvXCI7XG5pbXBvcnQgU2VjdGlvbkhlYWRpbmcgZnJvbSBcIi4uL2NvbW1vbi9TZWN0aW9uSGVhZGluZ1wiO1xuaW1wb3J0IFNvY2lhbExpbmtzIGZyb20gXCIuLi9jb21tb24vU29jaWFsTGlua3NcIjtcbmltcG9ydCBSZXZlYWwgZnJvbSBcIi4uL2NvbW1vbi9SZXZlYWxcIjtcbmltcG9ydCBBYm91dENhcmQgZnJvbSBcIi4vQWJvdXRDYXJkXCI7XG5pbXBvcnQgVGVjaHN0YWNrIGZyb20gXCIuL1RlY2hzdGFja1wiO1xuaW1wb3J0IEdpdGh1YiBmcm9tIFwiLi9HaXRodWJcIjtcblxuY29uc3QgaW50ZXJlc3RzID0gW1xuICB7IGljb246IEZpTW9uaXRvciwgbGFiZWw6IFwiR2FtaW5nXCIgfSxcbiAgeyBpY29uOiBGaUNvZmZlZSwgbGFiZWw6IFwiQ29va2luZyBhbmQgdHJ5aW5nIG5ldyByZWNpcGVzXCIgfSxcbiAgeyBpY29uOiBGaUNvbXBhc3MsIGxhYmVsOiBcIk5ldyBhbmQgdGhyaWxsLXNlZWtpbmcgZXhwZXJpZW5jZXNcIiB9LFxuXTtcblxuZnVuY3Rpb24gQWJvdXQoKSB7XG4gIHJldHVybiAoXG4gICAgPG1haW4gY2xhc3NOYW1lPVwiYWJvdXQtcGFnZVwiPlxuICAgICAgPFBhZ2VJbnRyb1xuICAgICAgICBleWVicm93PVwiQWJvdXQgbWVcIlxuICAgICAgICB0aXRsZT1cIkkgbG92ZSBjb21pbmcgdXAgd2l0aCBhbiBpZGVhLCBwaWN0dXJpbmcgaG93IGl0IGNvdWxkIGxvb2ssIGFuZCB0aGVuIGJyaW5naW5nIGl0IHRvIGxpZmUuXCJcbiAgICAgICAgZGVzY3JpcHRpb249XCJGcm9udGVuZCBkZXZlbG9wbWVudCBsZXRzIG1lIGNvbWJpbmUgY3JlYXRpdmUgdGhpbmtpbmcgd2l0aCB0aGUgcHJhY3RpY2FsIHdvcmsgb2YgYnVpbGRpbmcgc29tZXRoaW5nIHBlb3BsZSBjYW4gc2VlLCBpbnRlcmFjdCB3aXRoIGFuZCB1c2UuXCJcbiAgICAgIC8+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImFib3V0LXN0b3J5XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbCBhYm91dC1zdG9yeV9fZ3JpZFwiPlxuICAgICAgICAgIDxSZXZlYWw+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJleWVicm93XCI+QSBsaXR0bGUgbW9yZSBhYm91dCBtZTwvcD5cbiAgICAgICAgICAgIDxoMj5J4oCZbSBoYXBwaWVzdCB3aGVuIGFuIGlkZWEgc3RhcnRzIGZlZWxpbmcgcmVhbC48L2gyPlxuICAgICAgICAgIDwvUmV2ZWFsPlxuICAgICAgICAgIDxSZXZlYWwgY2xhc3NOYW1lPVwiYWJvdXQtc3RvcnlfX2NvcHlcIiBkZWxheT17OTB9PlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIEkgZW5qb3kgY29taW5nIHVwIHdpdGggaWRlYXMgYW5kIGltYWdpbmluZyBob3cgdGhleSBjb3VsZCBsb29rIGFuZCB3b3JrLlxuICAgICAgICAgICAgICBCdXQgd2hhdCBJIGxvdmUganVzdCBhcyBtdWNoIGlzIGFjdHVhbGx5IGJ1aWxkaW5nIHRoZW0gYW5kIHNlZWluZ1xuICAgICAgICAgICAgICBldmVyeXRoaW5nIGNvbWUgdG9nZXRoZXIuXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgSeKAmW0gYWxzbyBzb21lb25lIHdobyBlbmpveXMgcmVmaW5pbmcgdGhpbmdzLiBTb21ldGltZXMgaXTigJlzIGEgc21hbGxcbiAgICAgICAgICAgICAgdmlzdWFsIGRldGFpbCwgYW4gaW50ZXJhY3Rpb24gb3IganVzdCBmaW5kaW5nIGEgYmV0dGVyIHdheSB0byBtYWtlXG4gICAgICAgICAgICAgIHNvbWV0aGluZyB3b3JrLiBJIGxpa2UgZ29pbmcgYmFjayBhbmQgaW1wcm92aW5nIHRoaW5ncyB1bnRpbCBJ4oCZbSBoYXBweVxuICAgICAgICAgICAgICB3aXRoIHRoZSByZXN1bHQuXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9SZXZlYWw+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJmcm9udGVuZC1ub3RlXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbCBmcm9udGVuZC1ub3RlX19pbm5lclwiPlxuICAgICAgICAgIDxSZXZlYWw+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJleWVicm93XCI+V2h5IGZyb250ZW5kPC9wPlxuICAgICAgICAgICAgPGJsb2NrcXVvdGU+4oCcSSBsb3ZlIGZyb250ZW5kIGRldmVsb3BtZW50IGJlY2F1c2UgSSBnZXQgdG8gdHVybiBpZGVhcyBpbnRvIHNvbWV0aGluZyBwZW9wbGUgY2FuIGFjdHVhbGx5IHNlZSwgaW50ZXJhY3Qgd2l0aCBhbmQgdXNlLuKAnTwvYmxvY2txdW90ZT5cbiAgICAgICAgICA8L1JldmVhbD5cbiAgICAgICAgICA8UmV2ZWFsIGRlbGF5PXs4MH0+XG4gICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgSSBsaWtlIHdvcmtpbmcgb24gdGhlIGRldGFpbHMgcGVvcGxlIGRpcmVjdGx5IGV4cGVyaWVuY2U6IHJlc3BvbnNpdmVcbiAgICAgICAgICAgICAgbGF5b3V0cywgY2xlYXIgaW50ZXJhY3Rpb25zLCB1c2VmdWwgZmVlZGJhY2sgYW5kIHRoZSBxdWlldCB2aXN1YWwgY2hvaWNlc1xuICAgICAgICAgICAgICB0aGF0IG1ha2UgYSBwcm9kdWN0IGVhc2llciB0byB1bmRlcnN0YW5kLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvUmV2ZWFsPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiYXBwcm9hY2gtc2VjdGlvblwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGxcIj5cbiAgICAgICAgICA8U2VjdGlvbkhlYWRpbmcgZXllYnJvdz1cIkhvdyBJIGJ1aWxkXCIgdGl0bGU9XCJUaG91Z2h0ZnVsIGZyb20gdGhlIGZpcnN0IHF1ZXN0aW9uIHRvIHRoZSBmaW5hbCBkZXRhaWwuXCIgLz5cbiAgICAgICAgICA8QWJvdXRDYXJkIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJza2lsbHMtc2VjdGlvblwiIGlkPVwic2tpbGxzXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbFwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgZXllYnJvdz1cIlRlY2huaWNhbCBza2lsbHNcIlxuICAgICAgICAgICAgdGl0bGU9XCJGcm9udGVuZCBmaXJzdCwgd2l0aCBleHBlcmllbmNlIGFjcm9zcyB0aGUgdG9vbHMgdGhhdCBzdXBwb3J0IHRoZSB3b3JrLlwiXG4gICAgICAgICAgICBkZXNjcmlwdGlvbj1cIkEgZm9jdXNlZCB2aWV3IG9mIHRoZSB0ZWNobm9sb2dpZXMgSSB1c2UgbW9zdCBhbmQgb3RoZXJzIEkgaGF2ZSB3b3JrZWQgd2l0aCBhbG9uZyB0aGUgd2F5LlwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8VGVjaHN0YWNrIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJpbnRlcmVzdHMtc2VjdGlvblwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGwgaW50ZXJlc3RzLXNlY3Rpb25fX2dyaWRcIj5cbiAgICAgICAgICA8U2VjdGlvbkhlYWRpbmcgZXllYnJvdz1cIkF3YXkgZnJvbSB0aGUga2V5Ym9hcmRcIiB0aXRsZT1cIkN1cmlvc2l0eSBuZWVkcyByb29tIHRvIHdhbmRlci5cIiAvPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaW50ZXJlc3QtbGlzdFwiPlxuICAgICAgICAgICAge2ludGVyZXN0cy5tYXAoKHsgaWNvbjogSWNvbiwgbGFiZWwgfSwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgPFJldmVhbCBrZXk9e2xhYmVsfSBkZWxheT17aW5kZXggKiA3MH0+PEljb24gYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz48c3Bhbj57bGFiZWx9PC9zcGFuPjwvUmV2ZWFsPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJjb25uZWN0LXNlY3Rpb25cIiBpZD1cImNvbm5lY3RcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsIGNvbm5lY3Qtc2VjdGlvbl9faW5uZXJcIj5cbiAgICAgICAgICA8UmV2ZWFsPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPkxldOKAmXMgY29ubmVjdDwvcD5cbiAgICAgICAgICAgIDxoMj5IYXZlIGFuIGlkZWEsIGFuIG9wcG9ydHVuaXR5IG9yIGEgdGhvdWdodGZ1bCBmcm9udGVuZCBjaGFsbGVuZ2U/PC9oMj5cbiAgICAgICAgICAgIDxwPlRoZSB2ZXJpZmllZCBwdWJsaWMgY2hhbm5lbHMgYmVsb3cgYXJlIHRoZSBiZXN0IHdheSB0byBzdGFydCBhIGNvbnZlcnNhdGlvbi48L3A+XG4gICAgICAgICAgPC9SZXZlYWw+XG4gICAgICAgICAgPFJldmVhbCBjbGFzc05hbWU9XCJjb25uZWN0LXNlY3Rpb25fX2FjdGlvbnNcIiBkZWxheT17OTB9PlxuICAgICAgICAgICAgPExpbmsgY2xhc3NOYW1lPVwiYnV0dG9uIGJ1dHRvbi0tcHJpbWFyeVwiIHRvPVwiL3Jlc3VtZVwiPjxGaURvd25sb2FkIC8+IFZpZXcgJiBkb3dubG9hZCBDVjwvTGluaz5cbiAgICAgICAgICAgIDxMaW5rIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tLXNlY29uZGFyeVwiIHRvPVwiL3Byb2plY3RzXCI+U2VlIG15IHByb2plY3RzIDxGaUFycm93UmlnaHQgLz48L0xpbms+XG4gICAgICAgICAgICA8U29jaWFsTGlua3MgLz5cbiAgICAgICAgICA8L1JldmVhbD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImdpdGh1Yi1zZWN0aW9uXCI+PGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsXCI+PEdpdGh1YiAvPjwvZGl2Pjwvc2VjdGlvbj5cbiAgICA8L21haW4+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEFib3V0O1xuIl19

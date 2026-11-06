@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders the portfolio owner and primary projects navigation", () => {
+  window.scrollTo = jest.fn();
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /i love turning ideas into experiences people can use/i })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /explore projects/i })).toBeInTheDocument();
 });

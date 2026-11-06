@@ -1,0 +1,137 @@
+a7b6561e486943f155c76b28fc6bef2b
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _SocialLinks = _interopRequireDefault(require("./common/SocialLinks"));
+
+var _profile = require("../data/profile");
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Footer.js";
+
+function Footer() {
+  const {
+    pathname
+  } = (0, _reactRouterDom.useLocation)();
+
+  if (pathname === "/") {
+    return null;
+  }
+
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("footer", {
+    className: "site-footer",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "page-shell site-footer__main",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "site-footer__intro",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+          className: "site-footer__mark",
+          children: _profile.profile.shortName
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("strong", {
+            children: _profile.profile.name
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "Frontend-focused software developer building thoughtful digital experiences."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 16,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: "site-footer__nav",
+        "aria-label": "Footer navigation",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          to: "/projects",
+          children: "Projects"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          to: "/about",
+          children: "About Me"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          to: "/resume",
+          children: "View CV"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SocialLinks.default, {
+        compact: true
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "page-shell site-footer__base",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: ["\xA9 ", new Date().getFullYear(), " ", _profile.profile.name]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: "Designed and developed with care."
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Footer;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkZvb3Rlci5qcyJdLCJuYW1lcyI6WyJGb290ZXIiLCJwYXRobmFtZSIsInByb2ZpbGUiLCJzaG9ydE5hbWUiLCJuYW1lIiwiRGF0ZSIsImdldEZ1bGxZZWFyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQTs7Ozs7O0FBRUEsU0FBU0EsTUFBVCxHQUFrQjtBQUNoQixRQUFNO0FBQUVDLElBQUFBO0FBQUYsTUFBZSxrQ0FBckI7O0FBRUEsTUFBSUEsUUFBUSxLQUFLLEdBQWpCLEVBQXNCO0FBQ3BCLFdBQU8sSUFBUDtBQUNEOztBQUVELHNCQUNFO0FBQVEsSUFBQSxTQUFTLEVBQUMsYUFBbEI7QUFBQSw0QkFDRTtBQUFLLE1BQUEsU0FBUyxFQUFDLDhCQUFmO0FBQUEsOEJBQ0U7QUFBSyxRQUFBLFNBQVMsRUFBQyxvQkFBZjtBQUFBLGdDQUNFO0FBQU0sVUFBQSxTQUFTLEVBQUMsbUJBQWhCO0FBQUEsb0JBQXFDQyxpQkFBUUM7QUFBN0M7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFERixlQUVFO0FBQUEsa0NBQ0U7QUFBQSxzQkFBU0QsaUJBQVFFO0FBQWpCO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBREYsZUFFRTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFGRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBRkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBREYsZUFRRTtBQUFLLFFBQUEsU0FBUyxFQUFDLGtCQUFmO0FBQWtDLHNCQUFXLG1CQUE3QztBQUFBLGdDQUNFLDJCQUFDLG9CQUFEO0FBQU0sVUFBQSxFQUFFLEVBQUMsV0FBVDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFERixlQUVFLDJCQUFDLG9CQUFEO0FBQU0sVUFBQSxFQUFFLEVBQUMsUUFBVDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFGRixlQUdFLDJCQUFDLG9CQUFEO0FBQU0sVUFBQSxFQUFFLEVBQUMsU0FBVDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFIRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FSRixlQWFFLDJCQUFDLG9CQUFEO0FBQWEsUUFBQSxPQUFPO0FBQXBCO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FiRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFERixlQWdCRTtBQUFLLE1BQUEsU0FBUyxFQUFDLDhCQUFmO0FBQUEsOEJBQ0U7QUFBQSw0QkFBUyxJQUFJQyxJQUFKLEdBQVdDLFdBQVgsRUFBVCxPQUFvQ0osaUJBQVFFLElBQTVDO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQURGLGVBRUU7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FGRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFoQkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUF1QkQ7O2VBRWNKLE0iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBMaW5rLCB1c2VMb2NhdGlvbiB9IGZyb20gXCJyZWFjdC1yb3V0ZXItZG9tXCI7XG5pbXBvcnQgU29jaWFsTGlua3MgZnJvbSBcIi4vY29tbW9uL1NvY2lhbExpbmtzXCI7XG5pbXBvcnQgeyBwcm9maWxlIH0gZnJvbSBcIi4uL2RhdGEvcHJvZmlsZVwiO1xuXG5mdW5jdGlvbiBGb290ZXIoKSB7XG4gIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHVzZUxvY2F0aW9uKCk7XG5cbiAgaWYgKHBhdGhuYW1lID09PSBcIi9cIikge1xuICAgIHJldHVybiBudWxsO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8Zm9vdGVyIGNsYXNzTmFtZT1cInNpdGUtZm9vdGVyXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGwgc2l0ZS1mb290ZXJfX21haW5cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzaXRlLWZvb3Rlcl9faW50cm9cIj5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzaXRlLWZvb3Rlcl9fbWFya1wiPntwcm9maWxlLnNob3J0TmFtZX08L3NwYW4+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxzdHJvbmc+e3Byb2ZpbGUubmFtZX08L3N0cm9uZz5cbiAgICAgICAgICAgIDxwPkZyb250ZW5kLWZvY3VzZWQgc29mdHdhcmUgZGV2ZWxvcGVyIGJ1aWxkaW5nIHRob3VnaHRmdWwgZGlnaXRhbCBleHBlcmllbmNlcy48L3A+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8bmF2IGNsYXNzTmFtZT1cInNpdGUtZm9vdGVyX19uYXZcIiBhcmlhLWxhYmVsPVwiRm9vdGVyIG5hdmlnYXRpb25cIj5cbiAgICAgICAgICA8TGluayB0bz1cIi9wcm9qZWN0c1wiPlByb2plY3RzPC9MaW5rPlxuICAgICAgICAgIDxMaW5rIHRvPVwiL2Fib3V0XCI+QWJvdXQgTWU8L0xpbms+XG4gICAgICAgICAgPExpbmsgdG89XCIvcmVzdW1lXCI+VmlldyBDVjwvTGluaz5cbiAgICAgICAgPC9uYXY+XG4gICAgICAgIDxTb2NpYWxMaW5rcyBjb21wYWN0IC8+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1zaGVsbCBzaXRlLWZvb3Rlcl9fYmFzZVwiPlxuICAgICAgICA8c3Bhbj7CqSB7bmV3IERhdGUoKS5nZXRGdWxsWWVhcigpfSB7cHJvZmlsZS5uYW1lfTwvc3Bhbj5cbiAgICAgICAgPHNwYW4+RGVzaWduZWQgYW5kIGRldmVsb3BlZCB3aXRoIGNhcmUuPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgPC9mb290ZXI+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEZvb3RlcjtcbiJdfQ==

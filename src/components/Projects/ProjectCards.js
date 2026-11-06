@@ -1,40 +1,40 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { FiArrowUpRight, FiExternalLink, FiGithub } from "react-icons/fi";
+import ProjectVisual from "./ProjectVisual";
+import Reveal from "../common/Reveal";
 
-function ProjectCards(props) {
+function ProjectCard({ project, index = 0 }) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+    <Reveal as="article" className={`project-card-modern project-card-modern--${project.accent}`} delay={(index % 2) * 90}>
+      <ProjectVisual project={project} />
+      <div className="project-card-modern__body">
+        <div className="project-card-modern__meta">
+          <span>{project.category}</span>
+        </div>
+        <h3>{project.name}</h3>
+        <p>{project.shortSummary}</p>
+        <ul className="tag-list tag-list--small">
+          {project.stack.slice(0, 4).map((technology) => <li key={technology}>{technology}</li>)}
+        </ul>
+        <div className="project-card-modern__links">
+          <Link to={`/projects/${project.slug}`} aria-label={`View ${project.name} details`}>
+            View Details <FiArrowUpRight aria-hidden="true" />
+          </Link>
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noreferrer" aria-label={`${project.name} GitHub repository`}>
+              <FiGithub aria-hidden="true" />
+            </a>
+          )}
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noreferrer" aria-label={`${project.name} live demo`}>
+              <FiExternalLink aria-hidden="true" />
+            </a>
+          )}
+        </div>
+      </div>
+    </Reveal>
   );
 }
-export default ProjectCards;
+
+export default ProjectCard;
