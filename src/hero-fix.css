@@ -62,9 +62,62 @@
   .site-nav__inner { width: calc(100% - 24px); margin-inline: auto; }
 }
 
+@media (min-width: 1280px) {
+  .selected-work-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .selected-work-card, .selected-work-card:nth-child(even) { min-width: 0; }
+  .selected-work-card__visual { padding: 12px; }
+  .selected-work-card__visual .project-visual { min-height: 190px; }
+  .selected-work-card__content { padding: 22px; }
+  .selected-work-card__content h3 { font-size: 1.35rem; }
+}
+
 .about-story { padding-block: 58px; }
 .about-story__grid { grid-template-columns: .35fr 1fr; gap: 40px; align-items: start; }
 .about-story__copy p { max-width: 760px; margin: 0; font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.6; }
+.about-story--unified { padding-block: 72px; }
+.about-unified-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(40px, 7vw, 100px); align-items: start; }
+.about-unified-intro h2 { max-width: 650px; margin: 0 0 20px; font-size: clamp(2rem, 4vw, 3.6rem); line-height: 1.05; letter-spacing: -.04em; }
+.about-unified-intro > p:not(.eyebrow) { max-width: 640px; margin: 0 0 14px; color: var(--text-secondary); font-size: 1rem; }
+.about-unified-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 26px; }
+.about-unified-details { padding: 24px; border: 1px solid var(--border); background: var(--surface); }
+.about-mini-timeline { border-top: 1px solid var(--border); }
+.about-mini-timeline > div { display: grid; grid-template-columns: 100px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--border); }
+.about-mini-timeline span { color: var(--accent-blue); font-size: .78rem; font-weight: 700; }
+.about-mini-timeline p { margin: 0; }.about-mini-timeline strong, .about-mini-timeline small { display: block; }.about-mini-timeline small { margin-top: 3px; color: var(--text-secondary); }
+.about-unified-focus { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }.about-unified-focus > div { padding: 14px; border: 1px solid var(--border); background: var(--background-soft); }.about-unified-focus p:last-child { margin: 0; color: var(--text-secondary); font-size: .86rem; }.about-unified-interests { margin-top: 20px; }.about-unified-interests p:last-child { margin: 0; color: var(--text-secondary); }
+
+.build-process-grid, .interest-focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 42px; }
+.build-process-card, .interest-focus-card { padding: 26px; border: 1px solid var(--border); background: var(--surface); }
+.build-process-card__top { display: flex; justify-content: space-between; color: var(--accent-blue); }
+.build-process-card h3, .interest-focus-card h3 { margin: 36px 0 10px; font-size: 1.35rem; }
+.build-process-card p, .interest-focus-card p:not(.eyebrow) { margin: 0; color: var(--text-secondary); }
+.interest-focus-section, .beyond-code-section, .journey-section, .working-towards-section { padding: 100px 0; background: var(--background-soft); border-block: 1px solid var(--border); }
+.interest-focus-grid { grid-template-columns: repeat(2, 1fr); }
+.interest-focus-card--accent { border-color: rgba(94,230,194,.38); background: #102329; }
+.beyond-code-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 42px; }
+.beyond-code-card { overflow: hidden; border: 1px solid var(--border); background: var(--surface); }
+.beyond-code-card img { width: 100%; height: 190px; object-fit: cover; }
+.beyond-code-card div { padding: 22px; }
+.beyond-code-card h3 { margin: 0 0 10px; }
+.beyond-code-card p { margin: 0; color: var(--text-secondary); }
+.beyond-code-card--text { display: flex; align-items: end; background: linear-gradient(145deg, #152c32, var(--surface)); }
+.journey-list { margin-top: 42px; border-top: 1px solid var(--border); }
+.journey-item { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--border); }
+.journey-item > span { color: var(--accent-blue); font-weight: 700; }
+.journey-item h3 { margin: 0 0 5px; font-size: 1.1rem; }
+.journey-item p { margin: 0; color: var(--text-secondary); }
+.working-towards-section { background: var(--background); }
+.working-towards-section__inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: center; }
+.working-towards-section h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; }
+.working-towards-section p:not(.eyebrow) { color: var(--text-secondary); }
+.working-towards-section__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+
+@media (max-width: 820px) {
+  .about-story--unified { padding-block: 58px; }.about-unified-grid { grid-template-columns: 1fr; gap: 30px; }.about-unified-details { padding: 18px; }.about-unified-focus { grid-template-columns: 1fr 1fr; }
+  .build-process-grid, .interest-focus-grid, .beyond-code-grid, .working-towards-section__inner { grid-template-columns: 1fr; }
+  .journey-item { grid-template-columns: 1fr; gap: 8px; }
+  .interest-focus-section, .beyond-code-section, .journey-section, .working-towards-section { padding: 72px 0; }
+}
 
 @media (max-width: 820px) {
   .about-page > .home-page .landing-hero { height: 100svh; min-height: 100svh; }
@@ -78,9 +131,9 @@
 /* Final alignment and floating navigation tuning. */
 .about-page > .home-page .landing-hero__inner { padding-inline: clamp(24px, 5vw, 72px); }
 @media (min-width: 821px) {
-  .site-nav__inner { min-height: 56px; justify-content: center; padding-inline: 22px; border-radius: 999px; border-color: rgba(148,169,190,.2); background: rgba(10,17,29,.3); backdrop-filter: blur(6px); }
+  .site-nav__inner { width: fit-content; max-width: calc(100% - 48px); min-height: 56px; justify-content: center; padding-inline: 22px; border-radius: 999px; border-color: rgba(148,169,190,.2); background: rgba(10,17,29,.3); backdrop-filter: blur(6px); }
   .site-nav__links { margin-inline: auto; gap: 3px; }
-  .site-nav__links a { padding: 9px 12px; border-radius: 4px; font-size: .95rem; font-weight: 650; }
+  .site-nav__links a { padding: 9px 12px; border-radius: 4px; font-size: 1rem; font-weight: 650; }
 }
 @media (max-width: 820px) {
   .site-nav__inner { border-radius: 22px; padding-inline: 10px; overflow: hidden; }

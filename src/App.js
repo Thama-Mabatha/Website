@@ -23,7 +23,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Navigate to="/about#about" replace />} />
+          <Route path="/" element={<Navigate to="/about" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project" element={<Navigate to="/projects" replace />} />
