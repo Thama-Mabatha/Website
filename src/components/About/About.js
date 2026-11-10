@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiCoffee, FiCompass, FiDownload, FiMonitor } from "react-icons/fi";
-import PageIntro from "../common/PageIntro";
 import SectionHeading from "../common/SectionHeading";
 import SocialLinks from "../common/SocialLinks";
 import Reveal from "../common/Reveal";
@@ -25,29 +24,14 @@ function About() {
   return (
     <main className="about-page">
       <Home />
-      <PageIntro
-        eyebrow="About me"
-        title="I love coming up with an idea, picturing how it could look, and then bringing it to life."
-        description="Frontend development lets me combine creative thinking with the practical work of building something people can see, interact with and use."
-      />
-
       <section className="about-story" id="about">
         <div className="page-shell about-story__grid">
           <Reveal>
-            <p className="eyebrow">A little more about me</p>
-            <h2>I’m happiest when an idea starts feeling real.</h2>
+            <p className="eyebrow">About me</p>
           </Reveal>
           <Reveal className="about-story__copy" delay={90}>
             <p>
-              I enjoy coming up with ideas and imagining how they could look and work.
-              But what I love just as much is actually building them and seeing
-              everything come together.
-            </p>
-            <p>
-              I’m also someone who enjoys refining things. Sometimes it’s a small
-              visual detail, an interaction or just finding a better way to make
-              something work. I like going back and improving things until I’m happy
-              with the result.
+              I’m Thama Mabatha, an Information Technology-focused software developer who enjoys frontend development. I like turning ideas into useful digital experiences, then refining the details until they feel clear, thoughtful and good to use.
             </p>
           </Reveal>
         </div>

@@ -1,0 +1,165 @@
+d5a8b85170856818ff7918fdc29e7382
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _fi = require("react-icons/fi");
+
+var _profile = require("../../data/profile");
+
+var _thamaCover = _interopRequireDefault(require("../../Assets/thama-cover.jpeg"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Home\\Home.js";
+
+function Home() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: "home-page",
+    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "landing-hero",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "landing-hero__wash landing-hero__wash--blue",
+        "aria-hidden": "true"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "landing-hero__wash landing-hero__wash--pink",
+        "aria-hidden": "true"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("img", {
+        className: "landing-hero__background",
+        src: _thamaCover.default,
+        alt: "",
+        "aria-hidden": "true"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell landing-hero__inner",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "landing-hero__copy",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow hero-enter hero-enter--one",
+            children: "Software developer \xB7 Information Technology"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "hero-enter hero-enter--two",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+              children: "Thama Mabatha."
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 19,
+              columnNumber: 15
+            }, this), " I build thoughtful digital experiences."]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "landing-hero__intro hero-enter hero-enter--three",
+            children: _profile.profile.introduction
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "landing-hero__actions hero-enter hero-enter--four",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+              className: "button button--primary",
+              to: "/projects",
+              children: ["Explore Projects ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiArrowRight, {
+                "aria-hidden": "true"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 27,
+                columnNumber: 34
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 26,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+              className: "button button--secondary",
+              to: "/about#connect",
+              children: ["Contact Me ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiMail, {
+                "aria-hidden": "true"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 30,
+                columnNumber: 28
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 29,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+              className: "button button--text",
+              to: "/resume",
+              children: ["Download CV ", /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiDownload, {
+                "aria-hidden": "true"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 33,
+                columnNumber: 29
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 32,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "landing-hero__location hero-enter hero-enter--four",
+            children: "React interfaces \xB7 responsive experiences \xB7 thoughtful details"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 37,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 15,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Home;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhvbWUuanMiXSwibmFtZXMiOlsiSG9tZSIsImNvdmVySW1hZ2UiLCJwcm9maWxlIiwiaW50cm9kdWN0aW9uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFDQTs7QUFDQTs7QUFDQTs7Ozs7O0FBRUEsU0FBU0EsSUFBVCxHQUFnQjtBQUNkLHNCQUNFO0FBQU0sSUFBQSxTQUFTLEVBQUMsV0FBaEI7QUFBQSwyQkFDRTtBQUFTLE1BQUEsU0FBUyxFQUFDLGNBQW5CO0FBQUEsOEJBQ0U7QUFBSyxRQUFBLFNBQVMsRUFBQyw2Q0FBZjtBQUE2RCx1QkFBWTtBQUF6RTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBREYsZUFFRTtBQUFLLFFBQUEsU0FBUyxFQUFDLDZDQUFmO0FBQTZELHVCQUFZO0FBQXpFO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FGRixlQUdFO0FBQUssUUFBQSxTQUFTLEVBQUMsMEJBQWY7QUFBMEMsUUFBQSxHQUFHLEVBQUVDLG1CQUEvQztBQUEyRCxRQUFBLEdBQUcsRUFBQyxFQUEvRDtBQUFrRSx1QkFBWTtBQUE5RTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBSEYsZUFLRTtBQUFLLFFBQUEsU0FBUyxFQUFDLGdDQUFmO0FBQUEsK0JBQ0U7QUFBSyxVQUFBLFNBQVMsRUFBQyxvQkFBZjtBQUFBLGtDQUNFO0FBQUcsWUFBQSxTQUFTLEVBQUMsb0NBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBREYsZUFFRTtBQUFJLFlBQUEsU0FBUyxFQUFDLDRCQUFkO0FBQUEsb0NBQ0U7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsb0JBREY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGtCQUZGLGVBS0U7QUFBRyxZQUFBLFNBQVMsRUFBQyxrREFBYjtBQUFBLHNCQUNHQyxpQkFBUUM7QUFEWDtBQUFBO0FBQUE7QUFBQTtBQUFBLGtCQUxGLGVBU0U7QUFBSyxZQUFBLFNBQVMsRUFBQyxtREFBZjtBQUFBLG9DQUNFLDJCQUFDLG9CQUFEO0FBQU0sY0FBQSxTQUFTLEVBQUMsd0JBQWhCO0FBQXlDLGNBQUEsRUFBRSxFQUFDLFdBQTVDO0FBQUEsMkRBQ21CLDJCQUFDLGdCQUFEO0FBQWMsK0JBQVk7QUFBMUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxzQkFEbkI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLG9CQURGLGVBSUUsMkJBQUMsb0JBQUQ7QUFBTSxjQUFBLFNBQVMsRUFBQywwQkFBaEI7QUFBMkMsY0FBQSxFQUFFLEVBQUMsZ0JBQTlDO0FBQUEscURBQ2EsMkJBQUMsVUFBRDtBQUFRLCtCQUFZO0FBQXBCO0FBQUE7QUFBQTtBQUFBO0FBQUEsc0JBRGI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLG9CQUpGLGVBT0UsMkJBQUMsb0JBQUQ7QUFBTSxjQUFBLFNBQVMsRUFBQyxxQkFBaEI7QUFBc0MsY0FBQSxFQUFFLEVBQUMsU0FBekM7QUFBQSxzREFDYywyQkFBQyxjQUFEO0FBQVksK0JBQVk7QUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxzQkFEZDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsb0JBUEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGtCQVRGLGVBcUJFO0FBQUcsWUFBQSxTQUFTLEVBQUMsb0RBQWI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBckJGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FMRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUFzQ0Q7O2VBRWNILEkiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBMaW5rIH0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCB7IEZpQXJyb3dSaWdodCwgRmlEb3dubG9hZCwgRmlNYWlsIH0gZnJvbSBcInJlYWN0LWljb25zL2ZpXCI7XG5pbXBvcnQgeyBwcm9maWxlIH0gZnJvbSBcIi4uLy4uL2RhdGEvcHJvZmlsZVwiO1xuaW1wb3J0IGNvdmVySW1hZ2UgZnJvbSBcIi4uLy4uL0Fzc2V0cy90aGFtYS1jb3Zlci5qcGVnXCI7XG5cbmZ1bmN0aW9uIEhvbWUoKSB7XG4gIHJldHVybiAoXG4gICAgPG1haW4gY2xhc3NOYW1lPVwiaG9tZS1wYWdlXCI+XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJsYW5kaW5nLWhlcm9cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsYW5kaW5nLWhlcm9fX3dhc2ggbGFuZGluZy1oZXJvX193YXNoLS1ibHVlXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsYW5kaW5nLWhlcm9fX3dhc2ggbGFuZGluZy1oZXJvX193YXNoLS1waW5rXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgPGltZyBjbGFzc05hbWU9XCJsYW5kaW5nLWhlcm9fX2JhY2tncm91bmRcIiBzcmM9e2NvdmVySW1hZ2V9IGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsIGxhbmRpbmctaGVyb19faW5uZXJcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxhbmRpbmctaGVyb19fY29weVwiPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZXllYnJvdyBoZXJvLWVudGVyIGhlcm8tZW50ZXItLW9uZVwiPlNvZnR3YXJlIGRldmVsb3BlciDCtyBJbmZvcm1hdGlvbiBUZWNobm9sb2d5PC9wPlxuICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImhlcm8tZW50ZXIgaGVyby1lbnRlci0tdHdvXCI+XG4gICAgICAgICAgICAgIDxzcGFuPlRoYW1hIE1hYmF0aGEuPC9zcGFuPiBJIGJ1aWxkIHRob3VnaHRmdWwgZGlnaXRhbCBleHBlcmllbmNlcy5cbiAgICAgICAgICAgIDwvaDE+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJsYW5kaW5nLWhlcm9fX2ludHJvIGhlcm8tZW50ZXIgaGVyby1lbnRlci0tdGhyZWVcIj5cbiAgICAgICAgICAgICAge3Byb2ZpbGUuaW50cm9kdWN0aW9ufVxuICAgICAgICAgICAgPC9wPlxuXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxhbmRpbmctaGVyb19fYWN0aW9ucyBoZXJvLWVudGVyIGhlcm8tZW50ZXItLWZvdXJcIj5cbiAgICAgICAgICAgICAgPExpbmsgY2xhc3NOYW1lPVwiYnV0dG9uIGJ1dHRvbi0tcHJpbWFyeVwiIHRvPVwiL3Byb2plY3RzXCI+XG4gICAgICAgICAgICAgICAgRXhwbG9yZSBQcm9qZWN0cyA8RmlBcnJvd1JpZ2h0IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgPExpbmsgY2xhc3NOYW1lPVwiYnV0dG9uIGJ1dHRvbi0tc2Vjb25kYXJ5XCIgdG89XCIvYWJvdXQjY29ubmVjdFwiPlxuICAgICAgICAgICAgICAgIENvbnRhY3QgTWUgPEZpTWFpbCBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgIDxMaW5rIGNsYXNzTmFtZT1cImJ1dHRvbiBidXR0b24tLXRleHRcIiB0bz1cIi9yZXN1bWVcIj5cbiAgICAgICAgICAgICAgICBEb3dubG9hZCBDViA8RmlEb3dubG9hZCBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibGFuZGluZy1oZXJvX19sb2NhdGlvbiBoZXJvLWVudGVyIGhlcm8tZW50ZXItLWZvdXJcIj5cbiAgICAgICAgICAgICAgUmVhY3QgaW50ZXJmYWNlcyDCtyByZXNwb25zaXZlIGV4cGVyaWVuY2VzIMK3IHRob3VnaHRmdWwgZGV0YWlsc1xuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgIDwvbWFpbj5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgSG9tZTtcbiJdfQ==

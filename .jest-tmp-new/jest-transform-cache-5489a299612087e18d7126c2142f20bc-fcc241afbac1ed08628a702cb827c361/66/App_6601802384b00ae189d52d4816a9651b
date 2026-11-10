@@ -1,0 +1,201 @@
+6ad7660fe15e8d487699cfcdbab15cc4
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Navbar = _interopRequireDefault(require("./components/Navbar"));
+
+var _Home = _interopRequireDefault(require("./components/Home/Home"));
+
+var _About = _interopRequireDefault(require("./components/About/About"));
+
+var _Projects = _interopRequireDefault(require("./components/Projects/Projects"));
+
+var _ProjectCaseStudy = _interopRequireDefault(require("./components/Projects/ProjectCaseStudy"));
+
+var _ResumeNew = _interopRequireDefault(require("./components/Resume/ResumeNew"));
+
+var _Footer = _interopRequireDefault(require("./components/Footer"));
+
+var _ScrollToTop = _interopRequireDefault(require("./components/ScrollToTop"));
+
+require("./style.css");
+
+require("./hero-fix.css");
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\App.js";
+
+function App() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.BrowserRouter, {
+    children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+      className: "app-shell",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Navbar.default, {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ScrollToTop.default, {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Routes, {
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+            to: "/about#about",
+            replace: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 36
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/home",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Home.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 40
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/projects",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Projects.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 28,
+            columnNumber: 44
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/project",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+            to: "/projects",
+            replace: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 43
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/projects/:slug",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectCaseStudy.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 30,
+            columnNumber: 50
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/about",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_About.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 41
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/expertise",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+            to: "/about#skills",
+            replace: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 45
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/contact",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+            to: "/about#connect",
+            replace: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 43
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "/resume",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ResumeNew.default, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 42
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Route, {
+          path: "*",
+          element: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+            to: "/",
+            replace: true
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 36
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 9
+      }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Footer.default, {}, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 21,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = App;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC5qcyJdLCJuYW1lcyI6WyJBcHAiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQU1BOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxHQUFULEdBQWU7QUFDYixzQkFDRSwyQkFBQyw2QkFBRDtBQUFBLDJCQUNFO0FBQUssTUFBQSxTQUFTLEVBQUMsV0FBZjtBQUFBLDhCQUNFLDJCQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQURGLGVBRUUsMkJBQUMsb0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQUZGLGVBR0UsMkJBQUMsc0JBQUQ7QUFBQSxnQ0FDRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLEdBQVo7QUFBZ0IsVUFBQSxPQUFPLGVBQUUsMkJBQUMsd0JBQUQ7QUFBVSxZQUFBLEVBQUUsRUFBQyxjQUFiO0FBQTRCLFlBQUEsT0FBTztBQUFuQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQXpCO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBREYsZUFFRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLE9BQVo7QUFBb0IsVUFBQSxPQUFPLGVBQUUsMkJBQUMsYUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQTdCO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBRkYsZUFHRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLFdBQVo7QUFBd0IsVUFBQSxPQUFPLGVBQUUsMkJBQUMsaUJBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFqQztBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQUhGLGVBSUUsMkJBQUMscUJBQUQ7QUFBTyxVQUFBLElBQUksRUFBQyxVQUFaO0FBQXVCLFVBQUEsT0FBTyxlQUFFLDJCQUFDLHdCQUFEO0FBQVUsWUFBQSxFQUFFLEVBQUMsV0FBYjtBQUF5QixZQUFBLE9BQU87QUFBaEM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFoQztBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQUpGLGVBS0UsMkJBQUMscUJBQUQ7QUFBTyxVQUFBLElBQUksRUFBQyxpQkFBWjtBQUE4QixVQUFBLE9BQU8sZUFBRSwyQkFBQyx5QkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQXZDO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBTEYsZUFNRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLFFBQVo7QUFBcUIsVUFBQSxPQUFPLGVBQUUsMkJBQUMsY0FBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQTlCO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBTkYsZUFPRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLFlBQVo7QUFBeUIsVUFBQSxPQUFPLGVBQUUsMkJBQUMsd0JBQUQ7QUFBVSxZQUFBLEVBQUUsRUFBQyxlQUFiO0FBQTZCLFlBQUEsT0FBTztBQUFwQztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQWxDO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBUEYsZUFRRSwyQkFBQyxxQkFBRDtBQUFPLFVBQUEsSUFBSSxFQUFDLFVBQVo7QUFBdUIsVUFBQSxPQUFPLGVBQUUsMkJBQUMsd0JBQUQ7QUFBVSxZQUFBLEVBQUUsRUFBQyxnQkFBYjtBQUE4QixZQUFBLE9BQU87QUFBckM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFoQztBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQVJGLGVBU0UsMkJBQUMscUJBQUQ7QUFBTyxVQUFBLElBQUksRUFBQyxTQUFaO0FBQXNCLFVBQUEsT0FBTyxlQUFFLDJCQUFDLGtCQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBL0I7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFURixlQVVFLDJCQUFDLHFCQUFEO0FBQU8sVUFBQSxJQUFJLEVBQUMsR0FBWjtBQUFnQixVQUFBLE9BQU8sZUFBRSwyQkFBQyx3QkFBRDtBQUFVLFlBQUEsRUFBRSxFQUFDLEdBQWI7QUFBaUIsWUFBQSxPQUFPO0FBQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBekI7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFWRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsY0FIRixlQWVFLDJCQUFDLGVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQWZGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQXFCRDs7ZUFFY0EsRyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7XG4gIEJyb3dzZXJSb3V0ZXIgYXMgUm91dGVyLFxuICBOYXZpZ2F0ZSxcbiAgUm91dGUsXG4gIFJvdXRlcyxcbn0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4vY29tcG9uZW50cy9OYXZiYXJcIjtcbmltcG9ydCBIb21lIGZyb20gXCIuL2NvbXBvbmVudHMvSG9tZS9Ib21lXCI7XG5pbXBvcnQgQWJvdXQgZnJvbSBcIi4vY29tcG9uZW50cy9BYm91dC9BYm91dFwiO1xuaW1wb3J0IFByb2plY3RzIGZyb20gXCIuL2NvbXBvbmVudHMvUHJvamVjdHMvUHJvamVjdHNcIjtcbmltcG9ydCBQcm9qZWN0Q2FzZVN0dWR5IGZyb20gXCIuL2NvbXBvbmVudHMvUHJvamVjdHMvUHJvamVjdENhc2VTdHVkeVwiO1xuaW1wb3J0IFJlc3VtZSBmcm9tIFwiLi9jb21wb25lbnRzL1Jlc3VtZS9SZXN1bWVOZXdcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Gb290ZXJcIjtcbmltcG9ydCBTY3JvbGxUb1RvcCBmcm9tIFwiLi9jb21wb25lbnRzL1Njcm9sbFRvVG9wXCI7XG5pbXBvcnQgXCIuL3N0eWxlLmNzc1wiO1xuaW1wb3J0IFwiLi9oZXJvLWZpeC5jc3NcIjtcblxuZnVuY3Rpb24gQXBwKCkge1xuICByZXR1cm4gKFxuICAgIDxSb3V0ZXI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImFwcC1zaGVsbFwiPlxuICAgICAgICA8TmF2YmFyIC8+XG4gICAgICAgIDxTY3JvbGxUb1RvcCAvPlxuICAgICAgICA8Um91dGVzPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiL1wiIGVsZW1lbnQ9ezxOYXZpZ2F0ZSB0bz1cIi9hYm91dCNhYm91dFwiIHJlcGxhY2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCIvaG9tZVwiIGVsZW1lbnQ9ezxIb21lIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiL3Byb2plY3RzXCIgZWxlbWVudD17PFByb2plY3RzIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiL3Byb2plY3RcIiBlbGVtZW50PXs8TmF2aWdhdGUgdG89XCIvcHJvamVjdHNcIiByZXBsYWNlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiL3Byb2plY3RzLzpzbHVnXCIgZWxlbWVudD17PFByb2plY3RDYXNlU3R1ZHkgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCIvYWJvdXRcIiBlbGVtZW50PXs8QWJvdXQgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCIvZXhwZXJ0aXNlXCIgZWxlbWVudD17PE5hdmlnYXRlIHRvPVwiL2Fib3V0I3NraWxsc1wiIHJlcGxhY2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCIvY29udGFjdFwiIGVsZW1lbnQ9ezxOYXZpZ2F0ZSB0bz1cIi9hYm91dCNjb25uZWN0XCIgcmVwbGFjZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cIi9yZXN1bWVcIiBlbGVtZW50PXs8UmVzdW1lIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiKlwiIGVsZW1lbnQ9ezxOYXZpZ2F0ZSB0bz1cIi9cIiByZXBsYWNlIC8+fSAvPlxuICAgICAgICA8L1JvdXRlcz5cbiAgICAgICAgPEZvb3RlciAvPlxuICAgICAgPC9kaXY+XG4gICAgPC9Sb3V0ZXI+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEFwcDtcbiJdfQ==
