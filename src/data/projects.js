@@ -45,7 +45,7 @@ const projects = [
     lessons:
       "A useful offline experience depends on data ownership and failure behaviour as much as interface polish. Local-first design made those decisions part of the product from the beginning.",
     github: null,
-    demo: null,
+    demo: "https://personalnotetakerhymn.netlify.app/",
     featured: true,
     status: "Active local project",
     ownership: "Local source verified",

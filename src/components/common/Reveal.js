@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-function Reveal({ as = "div", children, className = "", delay = 0 }) {
+function Reveal({ as = "div", children, className = "", delay = 0, ...props }) {
   const elementRef = useRef(null);
   const [visible, setVisible] = useState(false);
   const Component = as;
@@ -29,6 +29,7 @@ function Reveal({ as = "div", children, className = "", delay = 0 }) {
   return (
     <Component
       ref={elementRef}
+      {...props}
       className={`scroll-reveal${visible ? " scroll-reveal--visible" : ""}${className ? ` ${className}` : ""}`}
       style={{ "--reveal-delay": `${delay}ms` }}
     >
