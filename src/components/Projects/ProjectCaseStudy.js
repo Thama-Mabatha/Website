@@ -36,25 +36,29 @@ function ProjectCaseStudy() {
 
       <section className="case-study__visual-section">
         <div className="page-shell"><ProjectVisual project={project} eager /></div>
+        {project.gallery && (
+          <div className="page-shell case-study__gallery" aria-label={`${project.name} screenshots`}>
+            {project.gallery.map((image) => (
+              <figure key={image.src}>
+                <img src={image.src} alt={image.alt} />
+              </figure>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="case-study__body">
         <div className="page-shell case-study__layout">
-          <aside className="case-study__aside">
-            <p className="eyebrow">Built with</p>
-            <ul className="case-study__stack">
-              {project.stack.map((technology) => <li key={technology}>{technology}</li>)}
-            </ul>
-            <div className="case-study__external">
-              {project.github && <a href={project.github} target="_blank" rel="noreferrer"><FiGithub /> View repository</a>}
-              {project.demo && <a href={project.demo} target="_blank" rel="noreferrer"><FiExternalLink /> Open live demo</a>}
-            </div>
-          </aside>
-
           <div className="case-study__content">
+            <Reveal as="section" className="case-study__essentials">
+              <div><p className="eyebrow">Why I built it</p><p>{project.whyBuilt}</p></div>
+              <div><p className="eyebrow">What I implemented</p><p>{project.contribution}</p></div>
+              <div><p className="eyebrow">What you can do</p><p>{project.canDo}</p></div>
+            </Reveal>
+
             <Reveal as="section">
               <p className="eyebrow">The idea</p>
-              <h2>Why it exists</h2>
+              <h2>How the idea came together</h2>
               <p>{project.overview}</p>
             </Reveal>
 
@@ -82,6 +86,17 @@ function ProjectCaseStudy() {
               <div><p className="eyebrow">Reflection</p><h2>What I learned</h2><p>{project.lessons}</p></div>
             </Reveal>
           </div>
+
+          <aside className="case-study__aside">
+            <p className="eyebrow">Built with</p>
+            <ul className="case-study__stack">
+              {project.stack.map((technology) => <li key={technology}>{technology}</li>)}
+            </ul>
+            <div className="case-study__external">
+              {project.github && <a href={project.github} target="_blank" rel="noreferrer"><FiGithub /> View repository</a>}
+              {project.demo && <a href={project.demo} target="_blank" rel="noreferrer"><FiExternalLink /> Open live demo</a>}
+            </div>
+          </aside>
         </div>
       </section>
     </main>

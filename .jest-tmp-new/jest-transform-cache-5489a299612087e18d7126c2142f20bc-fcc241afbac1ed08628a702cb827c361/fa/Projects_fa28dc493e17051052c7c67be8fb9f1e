@@ -1,0 +1,72 @@
+daa87a1e519cba13eb4c8817a215cab4
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _PageIntro = _interopRequireDefault(require("../common/PageIntro"));
+
+var _ProjectExplorer = _interopRequireDefault(require("./ProjectExplorer"));
+
+var _projects = _interopRequireDefault(require("../../data/projects"));
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Projects\\Projects.js";
+
+function Projects() {
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: "projects-page",
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_PageIntro.default, {
+      eyebrow: "Projects",
+      title: "Choose a project. See what I built and why.",
+      description: "Browse the work without losing your place. Each project starts with the problem, my contribution and what the finished experience lets someone do.",
+      meta: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+        children: [_projects.default.length, " projects \xB7 select a name to explore"]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 15
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "project-browser-section",
+      "aria-label": "Project browser",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectExplorer.default, {
+          projects: _projects.default
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = Projects;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3RzLmpzIl0sIm5hbWVzIjpbIlByb2plY3RzIiwicHJvamVjdHMiLCJsZW5ndGgiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxRQUFULEdBQW9CO0FBQ2xCLHNCQUNFO0FBQU0sSUFBQSxTQUFTLEVBQUMsZUFBaEI7QUFBQSw0QkFDRSwyQkFBQyxrQkFBRDtBQUNFLE1BQUEsT0FBTyxFQUFDLFVBRFY7QUFFRSxNQUFBLEtBQUssRUFBQyw2Q0FGUjtBQUdFLE1BQUEsV0FBVyxFQUFDLG9KQUhkO0FBSUUsTUFBQSxJQUFJLGVBQUU7QUFBQSxtQkFBT0Msa0JBQVNDLE1BQWhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUpSO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFERixlQVFFO0FBQVMsTUFBQSxTQUFTLEVBQUMseUJBQW5CO0FBQTZDLG9CQUFXLGlCQUF4RDtBQUFBLDZCQUNFO0FBQUssUUFBQSxTQUFTLEVBQUMsWUFBZjtBQUFBLCtCQUNFLDJCQUFDLHdCQUFEO0FBQWlCLFVBQUEsUUFBUSxFQUFFRDtBQUEzQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsWUFSRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQWdCRDs7ZUFFY0QsUSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBQYWdlSW50cm8gZnJvbSBcIi4uL2NvbW1vbi9QYWdlSW50cm9cIjtcbmltcG9ydCBQcm9qZWN0RXhwbG9yZXIgZnJvbSBcIi4vUHJvamVjdEV4cGxvcmVyXCI7XG5pbXBvcnQgcHJvamVjdHMgZnJvbSBcIi4uLy4uL2RhdGEvcHJvamVjdHNcIjtcblxuZnVuY3Rpb24gUHJvamVjdHMoKSB7XG4gIHJldHVybiAoXG4gICAgPG1haW4gY2xhc3NOYW1lPVwicHJvamVjdHMtcGFnZVwiPlxuICAgICAgPFBhZ2VJbnRyb1xuICAgICAgICBleWVicm93PVwiUHJvamVjdHNcIlxuICAgICAgICB0aXRsZT1cIkNob29zZSBhIHByb2plY3QuIFNlZSB3aGF0IEkgYnVpbHQgYW5kIHdoeS5cIlxuICAgICAgICBkZXNjcmlwdGlvbj1cIkJyb3dzZSB0aGUgd29yayB3aXRob3V0IGxvc2luZyB5b3VyIHBsYWNlLiBFYWNoIHByb2plY3Qgc3RhcnRzIHdpdGggdGhlIHByb2JsZW0sIG15IGNvbnRyaWJ1dGlvbiBhbmQgd2hhdCB0aGUgZmluaXNoZWQgZXhwZXJpZW5jZSBsZXRzIHNvbWVvbmUgZG8uXCJcbiAgICAgICAgbWV0YT17PHNwYW4+e3Byb2plY3RzLmxlbmd0aH0gcHJvamVjdHMgwrcgc2VsZWN0IGEgbmFtZSB0byBleHBsb3JlPC9zcGFuPn1cbiAgICAgIC8+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInByb2plY3QtYnJvd3Nlci1zZWN0aW9uXCIgYXJpYS1sYWJlbD1cIlByb2plY3QgYnJvd3NlclwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGxcIj5cbiAgICAgICAgICA8UHJvamVjdEV4cGxvcmVyIHByb2plY3RzPXtwcm9qZWN0c30gLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG4gICAgPC9tYWluPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBQcm9qZWN0cztcbiJdfQ==

@@ -1,6 +1,9 @@
 import universalImage from "../Assets/Projects/Universal.png";
 import ecommerceImage from "../Assets/Projects/commerce.jpeg";
 import weatherImage from "../Assets/Projects/Weather.png";
+import gbvAlertsImage from "../Assets/Projects/GBV-Alerts.png";
+import gbvModelManagementImage from "../Assets/Projects/GBV-Model-Management.png";
+import gbvResearchDashboardImage from "../Assets/Projects/GBV-Research-Dashboard.png";
 
 const projects = [
   {
@@ -9,6 +12,12 @@ const projects = [
     category: "Hymnal application · Frontend product",
     shortSummary:
       "An offline-first Tshivenḓa hymnal and personal sermon archive designed around calm, focused mobile worship.",
+    whyBuilt:
+      "I wanted hymn search and sermon notes to stay useful during worship, even when connectivity is unreliable.",
+    contribution:
+      "I built the React and TypeScript interface, local hymn search and reading flows, IndexedDB note storage, and the optional Supabase sync path.",
+    canDo:
+      "Search the bundled Tshivenḓa hymnal, move between hymns, save favourites, adjust the reader and keep private sermon notes.",
     overview:
       "Nyimbo dza Vhatendi modernises access to a traditional hymnal while keeping the reading experience respectful and simple. The application combines a bundled hymn library with private, structured sermon notes that remain useful even without a network connection.",
     stack: ["React", "TypeScript", "Vite", "IndexedDB", "Supabase", "PWA"],
@@ -48,12 +57,23 @@ const projects = [
     category: "Responsible AI · Moderation system",
     shortSummary:
       "A multilingual classification and moderation prototype for exploring online gender-based violence across South African language contexts.",
+    whyBuilt:
+      "I wanted to explore how multilingual classification could support—rather than replace—human moderation in South African language contexts.",
+    contribution:
+      "I implemented the React classification, reporting and review workflows, with Express and SQLite services plus a FastAPI experimentation service.",
+    canDo:
+      "Try single or batch analysis, route supported languages, review flagged content, report incidents and compare research models and datasets.",
     overview:
       "The project connects language-aware classification research to practical moderation workflows. It includes a simulated community feed, single and batch analysis, human-review queues, incident reporting, dataset administration and model comparison without presenting experimental work as production-ready.",
     stack: ["React", "Vite", "Express", "SQLite", "Python", "FastAPI", "Scikit-learn"],
-    image: null,
-    visual: "gbv",
-    imageAlt: "Illustration of the multilingual GBV moderation workflow",
+    image: gbvAlertsImage,
+    gallery: [
+      { src: gbvAlertsImage, alt: "GBV Observatory alert inbox showing moderation review work" },
+      { src: gbvModelManagementImage, alt: "GBV Observatory model management screen" },
+      { src: gbvResearchDashboardImage, alt: "GBV Observatory research dashboard" },
+    ],
+    visual: "image",
+    imageAlt: "GBV Observatory alert inbox showing moderation review work",
     features: [
       "Language routes for English, isiZulu and Sotho–Tswana work",
       "Single-comment and batch classification interfaces",
@@ -87,6 +107,12 @@ const projects = [
     category: "Machine learning",
     shortSummary:
       "A hackathon classification workflow for predicting dealership lead conversion across imbalanced data.",
+    whyBuilt:
+      "I built this during a hackathon to study lead-conversion prediction where uneven classes can make headline accuracy misleading.",
+    contribution:
+      "I prepared the data, compared classification models, evaluated imbalance-aware metrics and experimented with blended predictions in Jupyter.",
+    canDo:
+      "Run a repeatable notebook workflow to preprocess lead data and compare several model and ensemble approaches.",
     overview:
       "The project explores how multiple classification approaches can support lead-conversion decisions. The repository contains the preprocessing and experimentation notebook, with model comparison and ensemble exploration at the centre of the work.",
     stack: ["Python", "Pandas", "Scikit-learn", "CatBoost", "XGBoost", "Jupyter"],
@@ -125,6 +151,12 @@ const projects = [
     category: "Multi-tenant web platform",
     shortSummary:
       "A reusable administration interface for managing client universes, applications, users and content.",
+    whyBuilt:
+      "The team needed one administration experience for several client universes without rebuilding the same interface for each one.",
+    contribution:
+      "I contributed to the shared React administration flows for navigating universes, applications, users and records.",
+    canDo:
+      "Switch between client contexts and manage applications, users and content through reusable forms and record views.",
     overview:
       "The platform organises multiple client environments—described as universes—inside one administration experience. Its interface supports reusable management flows rather than building a separate admin product for every client.",
     stack: ["React", "JavaScript", "C#", "MongoDB", "Azure Functions"],
@@ -163,6 +195,12 @@ const projects = [
     category: "Three-tier web application",
     shortSummary:
       "A university team project combining grocery shopping, recipe discovery and one-click ingredient selection.",
+    whyBuilt:
+      "Our university team wanted to combine ordinary product shopping with a faster way to build a basket from a recipe.",
+    contribution:
+      "I worked in a four-person team on the React customer and manager journeys connected to a C# WCF service and SQL data.",
+    canDo:
+      "Browse products, add recipe ingredients to a basket, view invoices and use manager tools for product administration.",
     overview:
       "QuickKart was built as a three-tier learning project. Beyond a standard product catalogue and cart, the application lets shoppers select a recipe and add its required ingredients to their basket.",
     stack: ["React", "JavaScript", "CSS", "C#", "WCF", "SQL"],
@@ -200,6 +238,12 @@ const projects = [
     category: "Frontend application",
     shortSummary:
       "A focused weather interface that retrieves and presents location-based conditions.",
+    whyBuilt:
+      "I built this compact project to practise asynchronous API handling and turn a raw weather response into a clear interface.",
+    contribution:
+      "I built the JavaScript search flow, API request handling and responsive current-conditions view.",
+    canDo:
+      "Search by city and see the current condition, temperature, humidity and wind information in one view.",
     overview:
       "A compact frontend project centred on asynchronous API data, responsive presentation and clear formatting of current weather conditions.",
     stack: ["JavaScript", "HTML", "CSS", "Weather API"],

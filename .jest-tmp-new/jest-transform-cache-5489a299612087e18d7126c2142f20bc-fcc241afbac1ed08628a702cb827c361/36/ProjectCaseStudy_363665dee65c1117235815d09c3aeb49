@@ -1,0 +1,567 @@
+ab4ef78ff1acb48ef08957f57541b375
+"use strict";
+
+var _interopRequireDefault = require("C:/Users/thama/OneDrive/Desktop/Website/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _fi = require("react-icons/fi");
+
+var _ProjectVisual = _interopRequireDefault(require("./ProjectVisual"));
+
+var _Reveal = _interopRequireDefault(require("../common/Reveal"));
+
+var _projects = require("../../data/projects");
+
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+
+var _jsxFileName = "C:\\Users\\thama\\OneDrive\\Desktop\\Website\\src\\components\\Projects\\ProjectCaseStudy.js";
+
+function ProjectCaseStudy() {
+  const {
+    slug
+  } = (0, _reactRouterDom.useParams)();
+  const project = (0, _projects.getProjectBySlug)(slug);
+
+  if (!project) {
+    return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Navigate, {
+      to: "/projects",
+      replace: true
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 12
+    }, this);
+  }
+
+  return /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("main", {
+    className: `case-study case-study--${project.accent || "blue"}`,
+    children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "case-study__hero",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
+          className: "back-link",
+          to: "/projects",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiArrowLeft, {
+            "aria-hidden": "true"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 13
+          }, this), " All projects"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "case-study__heading reveal-on-load",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              className: "eyebrow",
+              children: project.category
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 25,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h1", {
+              children: project.name
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 26,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              children: project.shortSummary
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 27,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("dl", {
+            className: "project-facts",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("dt", {
+                children: "Status"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 30,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("dd", {
+                children: project.status
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 30,
+                columnNumber: 35
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 30,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("dt", {
+                children: "Context"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 31,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("dd", {
+                children: project.ownership
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 31,
+                columnNumber: 36
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 31,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "case-study__visual-section",
+      children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell",
+        children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_ProjectVisual.default, {
+          project: project,
+          eager: true
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 38,
+          columnNumber: 37
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 9
+      }, this), project.gallery && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell case-study__gallery",
+        "aria-label": `${project.name} screenshots`,
+        children: project.gallery.map(image => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("figure", {
+          children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("img", {
+            src: image.src,
+            alt: image.alt
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 17
+          }, this)
+        }, image.src, false, {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 15
+        }, this))
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 7
+    }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("section", {
+      className: "case-study__body",
+      children: /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "page-shell case-study__layout",
+        children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+          className: "case-study__content",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            className: "case-study__essentials",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "Why I built it"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 54,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.whyBuilt
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 54,
+                columnNumber: 61
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 54,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "What I implemented"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 55,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.contribution
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 55,
+                columnNumber: 65
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 55,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "What you can do"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 56,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.canDo
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 56,
+                columnNumber: 62
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 56,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 53,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              className: "eyebrow",
+              children: "The idea"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 60,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+              children: "How the idea came together"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 61,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              children: project.overview
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 62,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 59,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            className: "case-study__two-column",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "The problem"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 66,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "What needed solving"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 66,
+                columnNumber: 58
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.challenge
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 66,
+                columnNumber: 86
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 66,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "The approach"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 67,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "How it works"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 67,
+                columnNumber: 59
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.solution
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 67,
+                columnNumber: 80
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 67,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 65,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              className: "eyebrow",
+              children: "Under the surface"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 71,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+              children: "A simple system view"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 72,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ol", {
+              className: "architecture-list",
+              children: project.architecture.map((item, index) => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("span", {
+                  children: ["0", index + 1]
+                }, void 0, true, {
+                  fileName: _jsxFileName,
+                  lineNumber: 74,
+                  columnNumber: 75
+                }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                  children: item
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 74,
+                  columnNumber: 100
+                }, this)]
+              }, item, true, {
+                fileName: _jsxFileName,
+                lineNumber: 74,
+                columnNumber: 60
+              }, this))
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 73,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 70,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+              className: "eyebrow",
+              children: "What it can do"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 79,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+              children: "Main features"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 80,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+              className: "feature-list",
+              children: project.features.map(feature => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+                children: feature
+              }, feature, false, {
+                fileName: _jsxFileName,
+                lineNumber: 81,
+                columnNumber: 79
+              }, this))
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 81,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 78,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_Reveal.default, {
+            as: "section",
+            className: "case-study__two-column case-study__closing",
+            children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "Today"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 85,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Where it stands"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 85,
+                columnNumber: 52
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.outcome
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 85,
+                columnNumber: 76
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 85,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "eyebrow",
+                children: "Reflection"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 86,
+                columnNumber: 20
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "What I learned"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 86,
+                columnNumber: 57
+              }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+                children: project.lessons
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 86,
+                columnNumber: 80
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 86,
+              columnNumber: 15
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 84,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 11
+        }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("aside", {
+          className: "case-study__aside",
+          children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "eyebrow",
+            children: "Built with"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 91,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("ul", {
+            className: "case-study__stack",
+            children: project.stack.map(technology => /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("li", {
+              children: technology
+            }, technology, false, {
+              fileName: _jsxFileName,
+              lineNumber: 93,
+              columnNumber: 50
+            }, this))
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 92,
+            columnNumber: 13
+          }, this), /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "case-study__external",
+            children: [project.github && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+              href: project.github,
+              target: "_blank",
+              rel: "noreferrer",
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiGithub, {}, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 96,
+                columnNumber: 92
+              }, this), " View repository"]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 96,
+              columnNumber: 34
+            }, this), project.demo && /*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)("a", {
+              href: project.demo,
+              target: "_blank",
+              rel: "noreferrer",
+              children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_fi.FiExternalLink, {}, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 97,
+                columnNumber: 88
+              }, this), " Open live demo"]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 97,
+              columnNumber: 32
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 95,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 90,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 9
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 17,
+    columnNumber: 5
+  }, this);
+}
+
+var _default = ProjectCaseStudy;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlByb2plY3RDYXNlU3R1ZHkuanMiXSwibmFtZXMiOlsiUHJvamVjdENhc2VTdHVkeSIsInNsdWciLCJwcm9qZWN0IiwiYWNjZW50IiwiY2F0ZWdvcnkiLCJuYW1lIiwic2hvcnRTdW1tYXJ5Iiwic3RhdHVzIiwib3duZXJzaGlwIiwiZ2FsbGVyeSIsIm1hcCIsImltYWdlIiwic3JjIiwiYWx0Iiwid2h5QnVpbHQiLCJjb250cmlidXRpb24iLCJjYW5EbyIsIm92ZXJ2aWV3IiwiY2hhbGxlbmdlIiwic29sdXRpb24iLCJhcmNoaXRlY3R1cmUiLCJpdGVtIiwiaW5kZXgiLCJmZWF0dXJlcyIsImZlYXR1cmUiLCJvdXRjb21lIiwibGVzc29ucyIsInN0YWNrIiwidGVjaG5vbG9neSIsImdpdGh1YiIsImRlbW8iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7Ozs7QUFFQSxTQUFTQSxnQkFBVCxHQUE0QjtBQUMxQixRQUFNO0FBQUVDLElBQUFBO0FBQUYsTUFBVyxnQ0FBakI7QUFDQSxRQUFNQyxPQUFPLEdBQUcsZ0NBQWlCRCxJQUFqQixDQUFoQjs7QUFFQSxNQUFJLENBQUNDLE9BQUwsRUFBYztBQUNaLHdCQUFPLDJCQUFDLHdCQUFEO0FBQVUsTUFBQSxFQUFFLEVBQUMsV0FBYjtBQUF5QixNQUFBLE9BQU87QUFBaEM7QUFBQTtBQUFBO0FBQUE7QUFBQSxZQUFQO0FBQ0Q7O0FBRUQsc0JBQ0U7QUFBTSxJQUFBLFNBQVMsRUFBRywwQkFBeUJBLE9BQU8sQ0FBQ0MsTUFBUixJQUFrQixNQUFPLEVBQXBFO0FBQUEsNEJBQ0U7QUFBUyxNQUFBLFNBQVMsRUFBQyxrQkFBbkI7QUFBQSw2QkFDRTtBQUFLLFFBQUEsU0FBUyxFQUFDLFlBQWY7QUFBQSxnQ0FDRSwyQkFBQyxvQkFBRDtBQUFNLFVBQUEsU0FBUyxFQUFDLFdBQWhCO0FBQTRCLFVBQUEsRUFBRSxFQUFDLFdBQS9CO0FBQUEsa0NBQ0UsMkJBQUMs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LGlCQUFnQjtBQUFBLHdCQUFzQkE7QUFBdEIsZUFBU0EsVUFBVDtBQUFBO0FBQUE7QUFBQTtBQUFBLG9CQUFsQztBQURIO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBRkYsZUFLRTtBQUFLLFlBQUEsU0FBUyxFQUFDLHNCQUFmO0FBQUEsdUJBQ0cxQixPQUFPLENBQUMyQixNQUFSLGlCQUFrQjtBQUFHLGNBQUEsSUFBSSxFQUFFM0IsT0FBTyxDQUFDMkIsTUFBakI7QUFBeUIsY0FBQSxNQUFNLEVBQUMsUUFBaEM7QUFBeUMsY0FBQSxHQUFHLEVBQUMsWUFBN0M7QUFBQSxzQ0FBMEQsMkJBQUMsWUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLHNCQUExRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsb0JBRHJCLEVBRUczQixPQUFPLENBQUM0QixJQUFSLGlCQUFnQjtBQUFHLGNBQUEsSUFBSSxFQUFFNUIsT0FBTyxDQUFDNEIsSUFBakI7QUFBdUIsY0FBQSxNQUFNLEVBQUMsUUFBOUI7QUFBdUMsY0FBQSxHQUFHLEVBQUMsWUFBM0M7QUFBQSxzQ0FBd0QsMkJBQUMsa0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxzQkFBeEQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLG9CQUZuQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBTEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQXZDRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBakNGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQURGO0FBd0ZEOztlQUVjOUIsZ0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBMaW5rLCBOYXZpZ2F0ZSwgdXNlUGFyYW1zIH0gZnJvbSBcInJlYWN0LXJvdXRlci1kb21cIjtcbmltcG9ydCB7IEZpQXJyb3dMZWZ0LCBGaUV4dGVybmFsTGluaywgRmlHaXRodWIgfSBmcm9tIFwicmVhY3QtaWNvbnMvZmlcIjtcbmltcG9ydCBQcm9qZWN0VmlzdWFsIGZyb20gXCIuL1Byb2plY3RWaXN1YWxcIjtcbmltcG9ydCBSZXZlYWwgZnJvbSBcIi4uL2NvbW1vbi9SZXZlYWxcIjtcbmltcG9ydCB7IGdldFByb2plY3RCeVNsdWcgfSBmcm9tIFwiLi4vLi4vZGF0YS9wcm9qZWN0c1wiO1xuXG5mdW5jdGlvbiBQcm9qZWN0Q2FzZVN0dWR5KCkge1xuICBjb25zdCB7IHNsdWcgfSA9IHVzZVBhcmFtcygpO1xuICBjb25zdCBwcm9qZWN0ID0gZ2V0UHJvamVjdEJ5U2x1ZyhzbHVnKTtcblxuICBpZiAoIXByb2plY3QpIHtcbiAgICByZXR1cm4gPE5hdmlnYXRlIHRvPVwiL3Byb2plY3RzXCIgcmVwbGFjZSAvPjtcbiAgfVxuXG4gIHJldHVybiAoXG4gICAgPG1haW4gY2xhc3NOYW1lPXtgY2FzZS1zdHVkeSBjYXNlLXN0dWR5LS0ke3Byb2plY3QuYWNjZW50IHx8IFwiYmx1ZVwifWB9PlxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiY2FzZS1zdHVkeV9faGVyb1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhZ2Utc2hlbGxcIj5cbiAgICAgICAgICA8TGluayBjbGFzc05hbWU9XCJiYWNrLWxpbmtcIiB0bz1cIi9wcm9qZWN0c1wiPlxuICAgICAgICAgICAgPEZpQXJyb3dMZWZ0IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+IEFsbCBwcm9qZWN0c1xuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhc2Utc3R1ZHlfX2hlYWRpbmcgcmV2ZWFsLW9uLWxvYWRcIj5cbiAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj57cHJvamVjdC5jYXRlZ29yeX08L3A+XG4gICAgICAgICAgICAgIDxoMT57cHJvamVjdC5uYW1lfTwvaDE+XG4gICAgICAgICAgICAgIDxwPntwcm9qZWN0LnNob3J0U3VtbWFyeX08L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkbCBjbGFzc05hbWU9XCJwcm9qZWN0LWZhY3RzXCI+XG4gICAgICAgICAgICAgIDxkaXY+PGR0PlN0YXR1czwvZHQ+PGRkPntwcm9qZWN0LnN0YXR1c308L2RkPjwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2PjxkdD5Db250ZXh0PC9kdD48ZGQ+e3Byb2plY3Qub3duZXJzaGlwfTwvZGQ+PC9kaXY+XG4gICAgICAgICAgICA8L2RsPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiY2FzZS1zdHVkeV9fdmlzdWFsLXNlY3Rpb25cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsXCI+PFByb2plY3RWaXN1YWwgcHJvamVjdD17cHJvamVjdH0gZWFnZXIgLz48L2Rpdj5cbiAgICAgICAge3Byb2plY3QuZ2FsbGVyeSAmJiAoXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsIGNhc2Utc3R1ZHlfX2dhbGxlcnlcIiBhcmlhLWxhYmVsPXtgJHtwcm9qZWN0Lm5hbWV9IHNjcmVlbnNob3RzYH0+XG4gICAgICAgICAgICB7cHJvamVjdC5nYWxsZXJ5Lm1hcCgoaW1hZ2UpID0+IChcbiAgICAgICAgICAgICAgPGZpZ3VyZSBrZXk9e2ltYWdlLnNyY30+XG4gICAgICAgICAgICAgICAgPGltZyBzcmM9e2ltYWdlLnNyY30gYWx0PXtpbWFnZS5hbHR9IC8+XG4gICAgICAgICAgICAgIDwvZmlndXJlPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICl9XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImNhc2Utc3R1ZHlfX2JvZHlcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYWdlLXNoZWxsIGNhc2Utc3R1ZHlfX2xheW91dFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FzZS1zdHVkeV9fY29udGVudFwiPlxuICAgICAgICAgICAgPFJldmVhbCBhcz1cInNlY3Rpb25cIiBjbGFzc05hbWU9XCJjYXNlLXN0dWR5X19lc3NlbnRpYWxzXCI+XG4gICAgICAgICAgICAgIDxkaXY+PHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPldoeSBJIGJ1aWx0IGl0PC9wPjxwPntwcm9qZWN0LndoeUJ1aWx0fTwvcD48L2Rpdj5cbiAgICAgICAgICAgICAgPGRpdj48cCBjbGFzc05hbWU9XCJleWVicm93XCI+V2hhdCBJIGltcGxlbWVudGVkPC9wPjxwPntwcm9qZWN0LmNvbnRyaWJ1dGlvbn08L3A+PC9kaXY+XG4gICAgICAgICAgICAgIDxkaXY+PHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPldoYXQgeW91IGNhbiBkbzwvcD48cD57cHJvamVjdC5jYW5Eb308L3A+PC9kaXY+XG4gICAgICAgICAgICA8L1JldmVhbD5cblxuICAgICAgICAgICAgPFJldmVhbCBhcz1cInNlY3Rpb25cIj5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPlRoZSBpZGVhPC9wPlxuICAgICAgICAgICAgICA8aDI+SG93IHRoZSBpZGVhIGNhbWUgdG9nZXRoZXI8L2gyPlxuICAgICAgICAgICAgICA8cD57cHJvamVjdC5vdmVydmlld308L3A+XG4gICAgICAgICAgICA8L1JldmVhbD5cblxuICAgICAgICAgICAgPFJldmVhbCBhcz1cInNlY3Rpb25cIiBjbGFzc05hbWU9XCJjYXNlLXN0dWR5X190d28tY29sdW1uXCI+XG4gICAgICAgICAgICAgIDxkaXY+PHAgY2xhc3NOYW1lPVwiZXllYnJvd1wiPlRoZSBwcm9ibGVtPC9wPjxoMj5XaGF0IG5lZWRlZCBzb2x2aW5nPC9oMj48cD57cHJvamVjdC5jaGFsbGVuZ2V9PC9wPjwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2PjxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5UaGUgYXBwcm9hY2g8L3A+PGgyPkhvdyBpdCB3b3JrczwvaDI+PHA+e3Byb2plY3Quc29sdXRpb259PC9wPjwvZGl2PlxuICAgICAgICAgICAgPC9SZXZlYWw+XG5cbiAgICAgICAgICAgIDxSZXZlYWwgYXM9XCJzZWN0aW9uXCI+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5VbmRlciB0aGUgc3VyZmFjZTwvcD5cbiAgICAgICAgICAgICAgPGgyPkEgc2ltcGxlIHN5c3RlbSB2aWV3PC9oMj5cbiAgICAgICAgICAgICAgPG9sIGNsYXNzTmFtZT1cImFyY2hpdGVjdHVyZS1saXN0XCI+XG4gICAgICAgICAgICAgICAge3Byb2plY3QuYXJjaGl0ZWN0dXJlLm1hcCgoaXRlbSwgaW5kZXgpID0+IDxsaSBrZXk9e2l0ZW19PjxzcGFuPjB7aW5kZXggKyAxfTwvc3Bhbj48cD57aXRlbX08L3A+PC9saT4pfVxuICAgICAgICAgICAgICA8L29sPlxuICAgICAgICAgICAgPC9SZXZlYWw+XG5cbiAgICAgICAgICAgIDxSZXZlYWwgYXM9XCJzZWN0aW9uXCI+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5XaGF0IGl0IGNhbiBkbzwvcD5cbiAgICAgICAgICAgICAgPGgyPk1haW4gZmVhdHVyZXM8L2gyPlxuICAgICAgICAgICAgICA8dWwgY2xhc3NOYW1lPVwiZmVhdHVyZS1saXN0XCI+e3Byb2plY3QuZmVhdHVyZXMubWFwKChmZWF0dXJlKSA9PiA8bGkga2V5PXtmZWF0dXJlfT57ZmVhdHVyZX08L2xpPil9PC91bD5cbiAgICAgICAgICAgIDwvUmV2ZWFsPlxuXG4gICAgICAgICAgICA8UmV2ZWFsIGFzPVwic2VjdGlvblwiIGNsYXNzTmFtZT1cImNhc2Utc3R1ZHlfX3R3by1jb2x1bW4gY2FzZS1zdHVkeV9fY2xvc2luZ1wiPlxuICAgICAgICAgICAgICA8ZGl2PjxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5Ub2RheTwvcD48aDI+V2hlcmUgaXQgc3RhbmRzPC9oMj48cD57cHJvamVjdC5vdXRjb21lfTwvcD48L2Rpdj5cbiAgICAgICAgICAgICAgPGRpdj48cCBjbGFzc05hbWU9XCJleWVicm93XCI+UmVmbGVjdGlvbjwvcD48aDI+V2hhdCBJIGxlYXJuZWQ8L2gyPjxwPntwcm9qZWN0Lmxlc3NvbnN9PC9wPjwvZGl2PlxuICAgICAgICAgICAgPC9SZXZlYWw+XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8YXNpZGUgY2xhc3NOYW1lPVwiY2FzZS1zdHVkeV9fYXNpZGVcIj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImV5ZWJyb3dcIj5CdWlsdCB3aXRoPC9wPlxuICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT1cImNhc2Utc3R1ZHlfX3N0YWNrXCI+XG4gICAgICAgICAgICAgIHtwcm9qZWN0LnN0YWNrLm1hcCgodGVjaG5vbG9neSkgPT4gPGxpIGtleT17dGVjaG5vbG9neX0+e3RlY2hub2xvZ3l9PC9saT4pfVxuICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FzZS1zdHVkeV9fZXh0ZXJuYWxcIj5cbiAgICAgICAgICAgICAge3Byb2plY3QuZ2l0aHViICYmIDxhIGhyZWY9e3Byb2plY3QuZ2l0aHVifSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCI+PEZpR2l0aHViIC8+IFZpZXcgcmVwb3NpdG9yeTwvYT59XG4gICAgICAgICAgICAgIHtwcm9qZWN0LmRlbW8gJiYgPGEgaHJlZj17cHJvamVjdC5kZW1vfSB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub3JlZmVycmVyXCI+PEZpRXh0ZXJuYWxMaW5rIC8+IE9wZW4gbGl2ZSBkZW1vPC9hPn1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvYXNpZGU+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgIDwvbWFpbj5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgUHJvamVjdENhc2VTdHVkeTtcbiJdfQ==

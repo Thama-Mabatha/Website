@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { profile } from "../data/profile";
 
 const navigation = [
-  { label: "Projects", to: "/projects" },
-  { label: "About Me", to: "/about" },
+  { label: "About", to: "/about#about" },
+  { label: "Skills", to: "/about#skills" },
+  { label: "Projects", to: "/about#projects" },
+  { label: "Certificates", to: "/about#certificates" },
+  { label: "Live API", to: "/about#live-api" },
+  { label: "Contact", to: "/about#connect" },
 ];
 
 function NavBar() {
@@ -22,7 +26,7 @@ function NavBar() {
 
   useEffect(() => {
     setOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   return (
     <header className={`site-nav${scrolled ? " site-nav--scrolled" : ""}`}>
@@ -48,15 +52,19 @@ function NavBar() {
           className={`site-nav__links${open ? " site-nav__links--open" : ""}`}
           aria-label="Primary navigation"
         >
-          {navigation.map((item) => (
-            <NavLink
+          {navigation.map((item) => {
+            const [path, hash] = item.to.split("#");
+            const active = location.pathname === path && (!hash || location.hash === `#${hash}`);
+
+            return (
+            <Link
               key={item.to}
               to={item.to}
-              className={({ isActive }) => (isActive ? "active" : undefined)}
+              className={active ? "active" : undefined}
             >
               {item.label}
-            </NavLink>
-          ))}
+            </Link>
+          );})}
         </nav>
       </div>
     </header>

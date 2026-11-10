@@ -8,6 +8,12 @@ import Reveal from "../common/Reveal";
 import AboutCard from "./AboutCard";
 import Techstack from "./Techstack";
 import Github from "./Github";
+import projects from "../../data/projects";
+import istqbCertificate from "../../Assets/ISTQB-CTFL.jpeg";
+import sheCodesWebCertificate from "../../Assets/SheCodes-Web-Development.jpg";
+import sheCodesCodingCertificate from "../../Assets/SheCodes-Introduction-to-Coding.jpg";
+import ProjectVisual from "../Projects/ProjectVisual";
+import Home from "../Home/Home";
 
 const interests = [
   { icon: FiMonitor, label: "Gaming" },
@@ -18,13 +24,14 @@ const interests = [
 function About() {
   return (
     <main className="about-page">
+      <Home />
       <PageIntro
         eyebrow="About me"
         title="I love coming up with an idea, picturing how it could look, and then bringing it to life."
         description="Frontend development lets me combine creative thinking with the practical work of building something people can see, interact with and use."
       />
 
-      <section className="about-story">
+      <section className="about-story" id="about">
         <div className="page-shell about-story__grid">
           <Reveal>
             <p className="eyebrow">A little more about me</p>
@@ -80,6 +87,27 @@ function About() {
         </div>
       </section>
 
+      <section className="selected-work-section" id="projects">
+        <div className="page-shell">
+          <SectionHeading eyebrow="Selected projects" title="Work that is personal, practical and worth exploring." description="A closer look at two projects where the problem, the interface and the implementation all mattered." />
+          <div className="selected-work-grid">
+            {projects.filter((project) => ["multilingual-gbv-detection", "nyimbo-dza-vhatendi", "universal-admin-platform", "quickkart-ecommerce"].includes(project.slug)).map((project, index) => (
+              <Reveal as="article" className={`selected-work-card selected-work-card--${project.accent}`} delay={index * 80} key={project.slug}>
+                <div className="selected-work-card__visual"><ProjectVisual project={project} /></div>
+                <div className="selected-work-card__content">
+                  <p className="eyebrow">{project.category}</p>
+                  <h3>{project.name}</h3>
+                  <p>{project.whyBuilt}</p>
+                  <p>{project.contribution}</p>
+                  <Link className="text-link" to={`/projects/${project.slug}`}>Read the case study <FiArrowRight aria-hidden="true" /></Link>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Link className="button button--secondary selected-work-section__all" to="/projects">Browse all projects <FiArrowRight aria-hidden="true" /></Link>
+        </div>
+      </section>
+
       <section className="interests-section">
         <div className="page-shell interests-section__grid">
           <SectionHeading eyebrow="Away from the keyboard" title="Curiosity needs room to wander." />
@@ -88,6 +116,63 @@ function About() {
               <Reveal key={label} delay={index * 70}><Icon aria-hidden="true" /><span>{label}</span></Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="certificates-section" id="certificates">
+        <div className="page-shell">
+          <SectionHeading
+            eyebrow="Certificates & learning"
+            title="A record of the learning behind the work."
+            description="I keep the full, current list of qualifications and certificates in my CV so it stays easy to verify and download."
+          />
+          <div className="certificate-grid">
+            <Reveal as="article" className="certificate-card">
+              <img className="certificate-card__image" src={istqbCertificate} alt="ISTQB Certified Tester Foundation Level certificate" />
+              <p className="certificate-card__number">01 · iLab</p>
+              <h3>ISTQB Certified Tester Foundation Level</h3>
+              <p>A verified certificate in software testing fundamentals and quality-focused practice.</p>
+              <a className="text-link" href={istqbCertificate} target="_blank" rel="noreferrer">View certificate <FiArrowRight aria-hidden="true" /></a>
+            </Reveal>
+            <Reveal as="article" className="certificate-card" delay={80}>
+              <img className="certificate-card__image" src={sheCodesWebCertificate} alt="SheCodes Plus Web Development certificate" />
+              <p className="certificate-card__number">02 · SheCodes</p>
+              <h3>Web Development</h3>
+              <p>A SheCodes Plus workshop certificate covering practical web development foundations.</p>
+              <a className="text-link" href={sheCodesWebCertificate} target="_blank" rel="noreferrer">View certificate <FiArrowRight aria-hidden="true" /></a>
+            </Reveal>
+            <Reveal as="article" className="certificate-card" delay={140}>
+              <img className="certificate-card__image" src={sheCodesCodingCertificate} alt="SheCodes Basics Introduction to Coding certificate" />
+              <p className="certificate-card__number">03 · SheCodes</p>
+              <h3>Introduction to Coding</h3>
+              <p>A SheCodes Basics workshop certificate focused on introductory coding concepts.</p>
+              <a className="text-link" href={sheCodesCodingCertificate} target="_blank" rel="noreferrer">View certificate <FiArrowRight aria-hidden="true" /></a>
+            </Reveal>
+            <Reveal as="article" className="certificate-card" delay={80}>
+              <p className="certificate-card__number">04</p>
+              <h3>Learning through projects</h3>
+              <p>My project work is where I practise new ideas, from responsive React interfaces to API-driven experiences.</p>
+              <Link className="text-link" to="/projects">Browse the projects <FiArrowRight aria-hidden="true" /></Link>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="live-api-section" id="live-api">
+        <div className="page-shell live-api-section__grid">
+          <div>
+            <p className="eyebrow">Live API</p>
+            <h2>One small project, built around useful data.</h2>
+            <p>{projects.find((project) => project.slug === "weather-app")?.description}</p>
+          </div>
+          <Reveal className="live-api-card">
+            <div>
+              <p className="live-api-card__status"><span /> Live demo</p>
+              <h3>Weather App</h3>
+              <p>Search for a city and see current conditions presented in a focused, responsive interface.</p>
+            </div>
+            <a className="button button--primary" href={projects.find((project) => project.slug === "weather-app")?.demo} target="_blank" rel="noreferrer">Try the live API project <FiArrowRight aria-hidden="true" /></a>
+          </Reveal>
         </div>
       </section>
 

@@ -4,7 +4,7 @@ export const profile = {
   location: "Johannesburg, South Africa",
   headline: "I love turning ideas into experiences people can use.",
   introduction:
-    "I'm Thama, a software developer with a passion for frontend development, thoughtful design and bringing ideas to life. I enjoy transforming a concept into something real, functional and meaningful.",
+    "I enjoy shaping how an idea should look and work, then refining the details until the experience feels clear, useful and good to use.",
   links: {
     github: "https://github.com/Thama-Mabatha",
     linkedin: "https://www.linkedin.com/in/thama-mabatha-5b1942273",

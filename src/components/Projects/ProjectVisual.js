@@ -1,5 +1,5 @@
 import React from "react";
-import { FiBookOpen, FiHeart, FiSearch, FiShield } from "react-icons/fi";
+import { FiBookOpen, FiHeart, FiSearch } from "react-icons/fi";
 
 function HymnalVisual() {
   return (
@@ -25,37 +25,6 @@ function HymnalVisual() {
   );
 }
 
-function GbvVisual() {
-  return (
-    <div className="product-illustration gbv-illustration" role="img" aria-label="Illustration of the multilingual GBV detection and moderation workflow">
-      <span className="product-illustration__label">Interface illustration · research prototype</span>
-      <div className="gbv-panel">
-        <div className="gbv-panel__top">
-          <div><span className="gbv-logo"><FiShield /></span><strong>Language-aware moderation</strong></div>
-          <small>human review included</small>
-        </div>
-        <div className="gbv-languages">
-          <span className="active">English</span><span>isiZulu</span><span>Sesotho</span><span>Setswana</span>
-        </div>
-        <div className="gbv-workspace">
-          <div className="gbv-comment">
-            <small>COMMENT FOR REVIEW</small>
-            <i /><i /><i className="short" />
-            <div><span>language route</span><strong>Human review</strong></div>
-          </div>
-          <div className="gbv-flow">
-            <span>01<small>Detect language</small></span>
-            <i />
-            <span>02<small>Classify text</small></span>
-            <i />
-            <span>03<small>Review context</small></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function MachineLearningVisual() {
   return (
     <div className="product-illustration ml-illustration" role="img" aria-label="Illustrative lead conversion model workflow">
@@ -73,7 +42,6 @@ function MachineLearningVisual() {
 
 function ProjectVisual({ project, eager = false }) {
   if (project.visual === "hymnal") return <HymnalVisual />;
-  if (project.visual === "gbv") return <GbvVisual />;
   if (project.visual === "ml") return <MachineLearningVisual />;
 
   return (

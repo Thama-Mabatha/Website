@@ -14,6 +14,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
+import "./hero-fix.css";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/about#about" replace />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project" element={<Navigate to="/projects" replace />} />
           <Route path="/projects/:slug" element={<ProjectCaseStudy />} />

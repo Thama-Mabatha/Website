@@ -12,13 +12,13 @@ function TechnicalVisual() {
           <span />
           <span />
           <span />
-          <small>idea → working app</small>
+          <small>selected work · 01 / 03</small>
         </div>
         <div className="creative-window__canvas">
           <div className="idea-note">
             <FiStar />
-            <span>Start with the feeling</span>
-            <small>What should this experience make easier?</small>
+            <span>Nyimbo dza Vhatendi</span>
+            <small>Offline-first hymnal and personal sermon notes</small>
           </div>
 
           <div className="interface-sketch">
@@ -39,11 +39,11 @@ function TechnicalVisual() {
 
           <div className="detail-chip detail-chip--cursor">
             <FiMousePointer />
-            <span>Refine the details</span>
+            <span>GBV Detection</span>
           </div>
           <div className="detail-chip detail-chip--heart">
             <FiHeart />
-            <span>Make it feel good</span>
+            <span>QuickKart</span>
           </div>
         </div>
       </div>
