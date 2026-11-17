@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   FiArrowRight,
   FiExternalLink,
@@ -10,9 +9,6 @@ import ProjectVisual from "./ProjectVisual";
 function ProjectActions({ project }) {
   return (
     <div className="project-explorer__actions">
-      <Link className="button button--primary" to={`/projects/${project.slug}`}>
-        Read case study <FiArrowRight aria-hidden="true" />
-      </Link>
       {project.demo && (
         <a className="project-explorer__external" href={project.demo} target="_blank" rel="noreferrer">
           Live demo <FiExternalLink aria-hidden="true" />

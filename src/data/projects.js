@@ -239,7 +239,7 @@ const projects = [
     shortSummary:
       "A focused weather interface that retrieves and presents location-based conditions.",
     whyBuilt:
-      "I built this compact project to practise asynchronous API handling and turn a raw weather response into a clear interface.",
+      "This was my first attempt at building a live interface. I wanted to apply what I had learned in HTML, CSS and JavaScript while practising asynchronous API handling and turning a raw weather response into a clear interface.",
     contribution:
       "I built the JavaScript search flow, API request handling and responsive current-conditions view.",
     canDo:

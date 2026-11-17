@@ -198,7 +198,7 @@ function About() {
         children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
           eyebrow: "Technical skills",
           title: "",
-          description: "A focused view of the technologies I use most and others I have worked with along the way."
+          description: "A View of the technologies I use most and others I have worked with along the way."
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 79,
