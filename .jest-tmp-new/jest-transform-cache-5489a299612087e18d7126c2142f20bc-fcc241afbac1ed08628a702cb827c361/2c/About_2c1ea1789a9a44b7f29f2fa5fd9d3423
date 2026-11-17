@@ -197,7 +197,7 @@ function About() {
         className: "page-shell",
         children: [/*#__PURE__*/(0, _jsxDevRuntime.jsxDEV)(_SectionHeading.default, {
           eyebrow: "Technical skills",
-          title: "Frontend first, with experience across the tools that support the work.",
+          title: "",
           description: "A focused view of the technologies I use most and others I have worked with along the way."
         }, void 0, false, {
           fileName: _jsxFileName,
