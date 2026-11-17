@@ -807,7 +807,6 @@ a {
 
 /* Projects */
 .featured-projects-section,
-.approach-section,
 .skills-section {
   padding: 120px 0;
 }
@@ -2010,37 +2009,6 @@ a {
   color: var(--text-secondary);
 }
 
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 68px;
-}
-
-.approach-card {
-  min-height: 315px;
-  padding: 28px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: var(--surface);
-  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
-}
-
-.approach-card:nth-child(2) {
-  background: var(--accent-blue-soft);
-}
-
-.approach-card:nth-child(3) {
-  background: var(--accent-pink-soft);
-}
-
-.approach-card:hover {
-  border-color: var(--accent-blue);
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-5px);
-}
-
-.approach-card__top,
 .capability-card__top {
   display: flex;
   align-items: center;
@@ -2048,28 +2016,14 @@ a {
   color: var(--accent-blue-strong);
 }
 
-.approach-card__top svg,
 .capability-card__top svg {
   font-size: 1.35rem;
 }
 
-.approach-card__top span,
 .capability-card__top span {
   color: var(--text-secondary);
   font-size: 0.64rem;
   font-weight: 800;
-}
-
-.approach-card h3 {
-  margin: 74px 0 12px;
-  font-size: 1.45rem;
-  letter-spacing: -0.035em;
-}
-
-.approach-card p {
-  margin-bottom: 0;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
 }
 
 .skills-section {
@@ -2121,60 +2075,37 @@ a {
 }
 
 .capability-card ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 10px;
   margin: 22px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .capability-card li {
-  padding: 5px 8px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.7);
-  font-size: 0.59rem;
-  font-weight: 750;
-}
-
-.interests-section {
-  padding: 105px 0;
-  border-block: 1px solid var(--border);
-  background: var(--accent-pink-soft);
-}
-
-.interests-section__grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  align-items: center;
-  gap: 85px;
-}
-
-.interest-list {
-  display: grid;
-  gap: 10px;
-}
-
-.interest-list > div {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 13px;
-  min-height: 68px;
-  padding: 16px 19px;
-  border: 1px solid rgba(239, 182, 211, 0.46);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.78);
-  transition: transform 180ms ease;
+  justify-content: center;
+  gap: 8px;
+  min-height: 78px;
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 0;
+  color: var(--text-secondary);
+  background: transparent;
+  font-size: 0.65rem;
+  font-weight: 750;
+  text-align: center;
 }
 
-.interest-list > div:hover {
-  transform: translateX(5px);
-}
-
-.interest-list svg {
-  color: var(--accent-pink-strong);
+.capability-card li svg {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: var(--accent-blue);
 }
 
 .connect-section {
@@ -2668,14 +2599,12 @@ a {
   .case-study__heading,
   .case-study__layout,
   .about-story__grid,
-  .interests-section__grid,
   .connect-section__inner {
     grid-template-columns: 1fr;
   }
 
   .case-study__heading,
   .about-story__grid,
-  .interests-section__grid,
   .connect-section__inner {
     gap: 48px;
   }
@@ -2706,18 +2635,6 @@ a {
 
   .capability-grid {
     grid-template-columns: 1fr;
-  }
-
-  .approach-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .approach-card {
-    min-height: 260px;
-  }
-
-  .approach-card h3 {
-    margin-top: 48px;
   }
 
   .resume-actions {
@@ -3034,7 +2951,6 @@ a {
 
   .featured-projects-section,
   .additional-projects-section,
-  .approach-section,
   .skills-section,
   .about-story,
   .connect-section {
@@ -3290,7 +3206,7 @@ a {
 .live-api-card__status span { width: 8px; height: 8px; background: #49a879; border-radius: 50%; }
 .live-api-card .button { align-self: flex-start; margin-top: 28px; }
 
-.capability-card li { border-radius: 4px; }
+.tag-list li { border-radius: 4px; }
 
 .selected-work-section { padding: 108px 0; background: var(--background); }
 .selected-work-grid { display: grid; gap: 26px; margin-top: 48px; }
@@ -3348,13 +3264,12 @@ html, body, .app-shell { color: var(--text-primary); background: var(--backgroun
 .landing-hero__cover-frame { border-color: var(--border-strong); background: var(--surface); box-shadow: var(--shadow-lg); }
 .landing-hero__cover-caption { border-top-color: var(--border); color: var(--text-secondary); background: var(--surface); }
 .section-heading__description, .landing-hero__intro, .landing-hero__location { color: var(--text-secondary); }
-.about-story, .approach-section, .skills-section, .interests-section, .connect-section, .github-section, .selected-work-section, .certificates-section, .live-api-section { background: var(--background); border-color: var(--border); }
-.interests-section, .live-api-section { background: var(--background-soft); }
+.about-story, .skills-section, .connect-section, .github-section, .selected-work-section, .certificates-section, .live-api-section { background: var(--background); border-color: var(--border); }
 .about-story h2, .connect-section h2, .case-study h2, .resume-actions h2 { color: var(--text-primary); }
 .capability-card, .about-card, .certificate-card, .live-api-card, .selected-work-card, .github-panel { border-color: var(--border); background: var(--surface); box-shadow: none; }
 .capability-card--featured { border-color: rgba(94,230,194,.52); background: linear-gradient(145deg, #12232d, var(--surface)); box-shadow: none; }
 .capability-card p, .certificate-card p:not(.certificate-card__number), .live-api-card p:not(.live-api-card__status), .selected-work-card__content p:not(.eyebrow) { color: var(--text-secondary); }
-.capability-card li, .tag-list li { border-color: var(--border); color: var(--text-secondary); background: #0c1421; }
+.tag-list li { border-color: var(--border); color: var(--text-secondary); background: #0c1421; }
 .certificate-card__image { border-color: var(--border); background: #0b111d; }
 .live-api-card__status { color: var(--accent-blue); }
 .selected-work-card__visual { border-color: var(--border); background: #0b111d; }
